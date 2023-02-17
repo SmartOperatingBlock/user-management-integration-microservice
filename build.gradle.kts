@@ -21,6 +21,7 @@ repositories {
 }
 
 dependencies {
+    implementation(libs.kmongo)
     implementation(libs.kotlin.stdlib)
     implementation(libs.ktor.server.core)
     implementation(libs.ktor.server.netty)

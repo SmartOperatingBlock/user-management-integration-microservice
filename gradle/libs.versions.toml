@@ -5,6 +5,7 @@ ktor = "2.2.2"
 
 [libraries]
 archunit = { module = "com.tngtech.archunit:archunit-junit5", version = "1.0.1" }
+kmongo = { module = "org.litote.kmongo:kmongo", version = "4.8.0" }
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
 kotest-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
 kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
