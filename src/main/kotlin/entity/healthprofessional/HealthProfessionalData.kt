@@ -21,7 +21,7 @@ object HealthProfessionalData {
         override val name: String,
         override val surname: String,
         override val gender: Gender,
-        override val birthdate: String,
+        override val birthdate: Birthdate,
         override val emailAddress: String,
         override val phoneNumber: PhoneNumber,
         override val role: HealthProfessionalRole = HealthProfessionalRole.SURGEON
@@ -39,7 +39,7 @@ object HealthProfessionalData {
         override val name: String,
         override val surname: String,
         override val gender: Gender,
-        override val birthdate: String,
+        override val birthdate: Birthdate,
         override val emailAddress: String,
         override val phoneNumber: PhoneNumber,
         override val role: HealthProfessionalRole = HealthProfessionalRole.NURSE
@@ -57,7 +57,7 @@ object HealthProfessionalData {
         override val name: String,
         override val surname: String,
         override val gender: Gender,
-        override val birthdate: String,
+        override val birthdate: Birthdate,
         override val emailAddress: String,
         override val phoneNumber: PhoneNumber,
         override val role: HealthProfessionalRole = HealthProfessionalRole.ANESTHETIST
@@ -84,4 +84,11 @@ object HealthProfessionalData {
         val prefix: String,
         val number: String
     )
+
+    /** The model of the birthdate, composed by the [year], the [month] and the [day]. */
+    data class Birthdate(val year: String, val month: String, val day: String) {
+        override fun toString(): String {
+            return "$year-$month-$day"
+        }
+    }
 }

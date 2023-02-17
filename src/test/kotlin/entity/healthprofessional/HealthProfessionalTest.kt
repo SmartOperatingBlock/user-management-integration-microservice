@@ -9,6 +9,7 @@
 package entity.healthprofessional
 
 import entity.healthprofessional.HealthProfessionalData.Anesthetist
+import entity.healthprofessional.HealthProfessionalData.Birthdate
 import entity.healthprofessional.HealthProfessionalData.Gender
 import entity.healthprofessional.HealthProfessionalData.HealthProfessionalRole
 import entity.healthprofessional.HealthProfessionalData.Nurse
@@ -25,7 +26,7 @@ class HealthProfessionalTest : StringSpec({
         "Jack",
         "Fritz",
         Gender.MALE,
-        "22/04/1980",
+        Birthdate("1999", "20", "3"),
         "jackfritz@gmail.com",
         PhoneNumber("+39", "3328455753")
     )
@@ -35,7 +36,7 @@ class HealthProfessionalTest : StringSpec({
         "Jack",
         "Fritz",
         Gender.MALE,
-        "22/04/1980",
+        Birthdate("1999", "20", "3"),
         "jackfritz@gmail.com",
         PhoneNumber("+39", "3328455753")
     )
@@ -45,7 +46,7 @@ class HealthProfessionalTest : StringSpec({
         "Jack",
         "Fritz",
         Gender.MALE,
-        "22/04/1980",
+        Birthdate("1999", "20", "3"),
         "jackfritz@gmail.com",
         PhoneNumber("+39", "3328455753")
     )
@@ -57,7 +58,7 @@ class HealthProfessionalTest : StringSpec({
                 "Jack",
                 "Fritz",
                 Gender.MALE,
-                "22/04/1980",
+                Birthdate("1999", "20", "3"),
                 "jackfritz@gmail.com",
                 PhoneNumber("+39", "3328455753")
             )

@@ -8,6 +8,7 @@
 
 package entity.healthprofessional
 
+import entity.healthprofessional.HealthProfessionalData.Birthdate
 import entity.healthprofessional.HealthProfessionalData.Gender
 import entity.healthprofessional.HealthProfessionalData.HealthProfessionalRole
 import entity.healthprofessional.HealthProfessionalData.PhoneNumber
@@ -30,7 +31,7 @@ interface HealthProfessional {
     val gender: Gender
 
     /** The [birthdate] of the [HealthProfessional]. */
-    val birthdate: String
+    val birthdate: Birthdate
 
     /** The [emailAddress] of the [HealthProfessional]. */
     val emailAddress: String
