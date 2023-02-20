@@ -6,9 +6,9 @@
  * https://opensource.org/licenses/MIT.
  */
 
-/**
- * Template for kotlin projects.
- */
+import infrastructure.api.APIRouter
+
+/** The application launcher. */
 fun main() {
-    println("Hello World from Kotlin Template")
+    APIRouter().start()
 }
