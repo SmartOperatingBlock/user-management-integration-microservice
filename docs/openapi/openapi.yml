@@ -1,0 +1,61 @@
+openapi: 3.0.0
+servers:
+  - description: User Management Integration microservice
+    url: http://localhost:<port>/api
+info:
+  description: This is the API of the User Management Integration microservice within the Smart Operating Block project.
+  version: "0.1.0"
+  title: User Management Integration API
+  contact:
+    email: info@smartoperatingblock.com
+  license:
+    name: MIT License
+    url: 'https://opensource.org/license/mit/'
+
+tags:
+  - name: User API
+    description: This is the available API to manage and obtain information about users within the Operating Block.
+  - name: Health Professional API
+    description: This is the available API to manage and obtain information about health professionals within the Operating Block.
+
+paths:
+
+  /users/{user-id}:
+    get:
+      tags:
+        - User API
+      summary: get the user information
+      operationId: getUser
+      description: Get user information
+      parameters:
+        - in: path
+          name: user-id
+          description: the user ID
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: search result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '204':
+          description: no content about the room was found
+        '404':
+          description: User not found
+        '500':
+          description: server error occurred
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        userId:
+          type: string
+          example: 00102698
+        password:
+          type: string
+          example: Custompwd99!
