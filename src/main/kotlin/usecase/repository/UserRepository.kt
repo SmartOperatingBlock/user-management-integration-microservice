@@ -22,5 +22,5 @@ interface UserRepository {
     fun deleteUser(userId: String): Boolean
 
     /** Returns a [User] given its [userId]. */
-    fun getUser(userId: String): User
+    fun getUser(userId: String): User?
 }
