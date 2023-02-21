@@ -6,9 +6,13 @@
  * https://opensource.org/licenses/MIT.
  */
 
+import application.provider.Provider
 import infrastructure.api.APIRouter
+import infrastructure.db.MongoClient
+import infrastructure.dt.AzureDTClient
 
 /** The application launcher. */
 fun main() {
-    APIRouter().start()
+    val provider = Provider(MongoClient(), AzureDTClient())
+    APIRouter(provider).start()
 }
