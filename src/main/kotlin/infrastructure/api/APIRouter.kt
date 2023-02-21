@@ -8,10 +8,10 @@
 
 package infrastructure.api
 
-import application.provider.Provider
 import infrastructure.api.routes.authAPI
 import infrastructure.api.routes.healthProfessionalAPI
 import infrastructure.api.routes.userAPI
+import infrastructure.provider.Provider
 import io.ktor.serialization.kotlinx.json.json
 import io.ktor.server.application.Application
 import io.ktor.server.application.install
