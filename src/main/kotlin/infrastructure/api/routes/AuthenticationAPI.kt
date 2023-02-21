@@ -30,7 +30,8 @@ fun Route.authAPI(provider: Provider) {
             ).execute()
         ) {
             call.respond(HttpStatusCode.OK)
+        } else {
+            call.respond(HttpStatusCode.Unauthorized, "Error: wrong credentials!")
         }
-        call.respond(HttpStatusCode.Unauthorized, "Error: wrong credentials!")
     }
 }
