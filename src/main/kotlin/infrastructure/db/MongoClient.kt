@@ -10,7 +10,7 @@ package infrastructure.db
 
 import application.controller.manager.HealthProfessionalDatabaseManager
 import application.controller.manager.UserDatabaseManager
-import entity.healthprofessional.HealthProfessional
+import entity.healthprofessional.HealthProfessionalData.HealthProfessional
 import entity.user.User
 
 /**
