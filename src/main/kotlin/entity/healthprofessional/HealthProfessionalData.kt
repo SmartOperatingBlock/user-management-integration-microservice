@@ -13,53 +13,25 @@ package entity.healthprofessional
  */
 object HealthProfessionalData {
 
-    /** The Surgeon health professional model. */
-    data class Surgeon(
-        override val healthProfessionalId: String,
-        override val name: String,
-        override val surname: String,
-        override val gender: Gender,
-        override val birthdate: Birthdate,
-        override val emailAddress: String,
-        override val phoneNumber: PhoneNumber,
-        override val role: HealthProfessionalRole = HealthProfessionalRole.SURGEON
-    ) : HealthProfessional {
-        init {
-            require(healthProfessionalId.isNotEmpty()) {
-                throw IllegalArgumentException("Invalid HealthProfessional ID!")
-            }
-        }
-    }
-
-    /** The Surgeon health professional model. */
-    data class Nurse(
-        override val healthProfessionalId: String,
-        override val name: String,
-        override val surname: String,
-        override val gender: Gender,
-        override val birthdate: Birthdate,
-        override val emailAddress: String,
-        override val phoneNumber: PhoneNumber,
-        override val role: HealthProfessionalRole = HealthProfessionalRole.NURSE
-    ) : HealthProfessional {
-        init {
-            require(healthProfessionalId.isNotEmpty()) {
-                throw IllegalArgumentException("Invalid HealthProfessional ID!")
-            }
-        }
-    }
-
-    /** The Surgeon health professional model. */
-    data class Anesthetist(
-        override val healthProfessionalId: String,
-        override val name: String,
-        override val surname: String,
-        override val gender: Gender,
-        override val birthdate: Birthdate,
-        override val emailAddress: String,
-        override val phoneNumber: PhoneNumber,
-        override val role: HealthProfessionalRole = HealthProfessionalRole.ANESTHETIST,
-    ) : HealthProfessional {
+    /** The health professional model. */
+    data class HealthProfessional(
+        /** The health professional id. */
+        val healthProfessionalId: String,
+        /** The health professional name. */
+        val name: String,
+        /** The health professional surname. */
+        val surname: String,
+        /** The health professional gender. */
+        val gender: Gender,
+        /** The health professional birthdate. */
+        val birthdate: Birthdate,
+        /** The health professional email address. */
+        val emailAddress: String,
+        /** The health professional phone number. */
+        val phoneNumber: PhoneNumber,
+        /** The health professional role. */
+        val role: HealthProfessionalRole
+    ) {
         init {
             require(healthProfessionalId.isNotEmpty()) {
                 throw IllegalArgumentException("Invalid HealthProfessional ID!")

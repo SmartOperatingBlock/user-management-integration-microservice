@@ -10,7 +10,7 @@ package infrastructure.dt
 
 import application.controller.manager.HealthProfessionalDigitalTwinsManager
 import application.controller.manager.UserDigitalTwinsManager
-import entity.healthprofessional.HealthProfessional
+import entity.healthprofessional.HealthProfessionalData.HealthProfessional
 import entity.user.User
 
 /**

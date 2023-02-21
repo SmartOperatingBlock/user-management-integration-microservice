@@ -8,72 +8,44 @@
 
 package entity.healthprofessional
 
-import entity.healthprofessional.HealthProfessionalData.Anesthetist
 import entity.healthprofessional.HealthProfessionalData.Birthdate
 import entity.healthprofessional.HealthProfessionalData.Gender
+import entity.healthprofessional.HealthProfessionalData.HealthProfessional
 import entity.healthprofessional.HealthProfessionalData.HealthProfessionalRole
-import entity.healthprofessional.HealthProfessionalData.Nurse
 import entity.healthprofessional.HealthProfessionalData.PhoneNumber
-import entity.healthprofessional.HealthProfessionalData.Surgeon
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.shouldBe
 
 class HealthProfessionalTest : StringSpec({
 
-    val surgeon: HealthProfessional = Surgeon(
+    val healthProfessional = HealthProfessional(
         "surgeonID",
         "Jack",
         "Fritz",
         Gender.MALE,
         Birthdate("1999", "20", "3"),
         "jackfritz@gmail.com",
-        PhoneNumber("+39", "3328455753")
-    )
-
-    val nurse: HealthProfessional = Nurse(
-        "nurseID",
-        "Jack",
-        "Fritz",
-        Gender.MALE,
-        Birthdate("1999", "20", "3"),
-        "jackfritz@gmail.com",
-        PhoneNumber("+39", "3328455753")
-    )
-
-    val anesthetist: HealthProfessional = Anesthetist(
-        "anesthetistID",
-        "Jack",
-        "Fritz",
-        Gender.MALE,
-        Birthdate("1999", "20", "3"),
-        "jackfritz@gmail.com",
-        PhoneNumber("+39", "3328455753")
+        PhoneNumber("+39", "3328455753"),
+        HealthProfessionalRole.ANESTHETIST
     )
 
     "An Healh Professional ID should not be empty" {
         shouldThrow<IllegalArgumentException> {
-            Surgeon(
+            HealthProfessional(
                 "",
                 "Jack",
                 "Fritz",
                 Gender.MALE,
                 Birthdate("1999", "20", "3"),
                 "jackfritz@gmail.com",
-                PhoneNumber("+39", "3328455753")
+                PhoneNumber("+39", "3328455753"),
+                HealthProfessionalRole.ANESTHETIST
             )
         }
     }
 
-    "A surgeon should correctly be created " {
-        surgeon.role shouldBe HealthProfessionalRole.SURGEON
-    }
-
-    "A nurse should correctly be created " {
-        nurse.role shouldBe HealthProfessionalRole.NURSE
-    }
-
-    "An anesthetist should correctly be created " {
-        anesthetist.role shouldBe HealthProfessionalRole.ANESTHETIST
+    "A health professional should correctly be created " {
+        healthProfessional.role shouldBe HealthProfessionalRole.ANESTHETIST
     }
 })

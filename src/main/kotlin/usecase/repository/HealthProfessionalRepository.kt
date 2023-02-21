@@ -8,7 +8,7 @@
 
 package usecase.repository
 
-import entity.healthprofessional.HealthProfessional
+import entity.healthprofessional.HealthProfessionalData.HealthProfessional
 
 /**
  * The repository for health professionals management.

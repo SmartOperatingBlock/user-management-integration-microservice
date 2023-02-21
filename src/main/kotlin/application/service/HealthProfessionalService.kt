@@ -8,7 +8,7 @@
 
 package application.service
 
-import entity.healthprofessional.HealthProfessional
+import entity.healthprofessional.HealthProfessionalData.HealthProfessional
 import usecase.repository.HealthProfessionalRepository
 
 /**

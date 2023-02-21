@@ -10,7 +10,7 @@ package application.controller
 
 import application.controller.manager.HealthProfessionalDatabaseManager
 import application.controller.manager.HealthProfessionalDigitalTwinsManager
-import entity.healthprofessional.HealthProfessional
+import entity.healthprofessional.HealthProfessionalData.HealthProfessional
 import usecase.repository.HealthProfessionalRepository
 
 /**

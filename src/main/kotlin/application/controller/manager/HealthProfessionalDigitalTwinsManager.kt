@@ -8,7 +8,7 @@
 
 package application.controller.manager
 
-import entity.healthprofessional.HealthProfessional
+import entity.healthprofessional.HealthProfessionalData.HealthProfessional
 
 /**
  * The interface for Digital Twins operations on [HealthProfessional].
