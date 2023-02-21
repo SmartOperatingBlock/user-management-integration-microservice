@@ -8,6 +8,7 @@
 
 package infrastructure.api
 
+import application.provider.Provider
 import infrastructure.api.routes.authAPI
 import infrastructure.api.routes.healthProfessionalAPI
 import infrastructure.api.routes.userAPI
@@ -22,7 +23,7 @@ import io.ktor.server.routing.routing
 /**
  * The API router of the application.
  */
-class APIRouter {
+class APIRouter(private val provider: Provider) {
 
     companion object {
         /** The port of the KTor server. */
@@ -31,7 +32,9 @@ class APIRouter {
 
     /** Start the Ktor server. */
     fun start() {
-        embeddedServer(Netty, port = NETTY_PORT, module = this::module).start(wait = true)
+        embeddedServer(Netty, port = NETTY_PORT) {
+            module(this)
+        }.start(wait = true)
     }
 
     /** The KTor Application module. */
@@ -47,9 +50,9 @@ class APIRouter {
      */
     private fun Application.configureRouting() {
         routing {
-            authAPI()
-            userAPI()
-            healthProfessionalAPI()
+            authAPI(provider)
+            userAPI(provider)
+            healthProfessionalAPI(provider)
         }
     }
 
