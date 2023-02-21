@@ -18,7 +18,7 @@ data class User(
     val userId: String,
 
     /** The [password] of the [User]. */
-    val password: String
+    val password: String,
 ) {
     init {
         require(userId.isNotEmpty()) {

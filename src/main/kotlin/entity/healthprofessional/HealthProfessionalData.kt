@@ -8,8 +8,6 @@
 
 package entity.healthprofessional
 
-import java.util.*
-
 /**
  * Module with all the Health Professionals data.
  */
@@ -60,7 +58,7 @@ object HealthProfessionalData {
         override val birthdate: Birthdate,
         override val emailAddress: String,
         override val phoneNumber: PhoneNumber,
-        override val role: HealthProfessionalRole = HealthProfessionalRole.ANESTHETIST
+        override val role: HealthProfessionalRole = HealthProfessionalRole.ANESTHETIST,
     ) : HealthProfessional {
         init {
             require(healthProfessionalId.isNotEmpty()) {
@@ -71,18 +69,18 @@ object HealthProfessionalData {
 
     /** All types of Health professional gender. */
     enum class Gender {
-        MALE, FEMALE, OTHER
+        MALE, FEMALE, OTHER,
     }
 
     /** All types of health professional role. */
     enum class HealthProfessionalRole {
-        SURGEON, ANESTHETIST, NURSE
+        SURGEON, ANESTHETIST, NURSE,
     }
 
     /** The phone [number] preceded by the [prefix]. */
     data class PhoneNumber(
         val prefix: String,
-        val number: String
+        val number: String,
     )
 
     /** The model of the birthdate, composed by the [year], the [month] and the [day]. */
