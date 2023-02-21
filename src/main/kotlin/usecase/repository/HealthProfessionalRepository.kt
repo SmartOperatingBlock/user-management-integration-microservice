@@ -22,5 +22,5 @@ interface HealthProfessionalRepository {
     fun deleteHealthProfessional(healthProfessionalId: String): Boolean
 
     /** Returns a [HealthProfessional] given its [healthProfessionalId]. */
-    fun getHealthProfessional(healthProfessionalId: String): HealthProfessional
+    fun getHealthProfessional(healthProfessionalId: String): HealthProfessional?
 }
