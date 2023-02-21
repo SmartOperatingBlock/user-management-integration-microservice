@@ -17,37 +17,73 @@ tags:
     description: This is the available API to manage and obtain information about users within the Operating Block.
   - name: Health Professional API
     description: This is the available API to manage and obtain information about health professionals within the Operating Block.
+  - name: Authentication API
+    description: This is the available API to authenticate users inside the Operating Block.
 
 paths:
 
-  /users/{user-id}:
+  /api/users/{userId}:
     get:
       tags:
         - User API
-      summary: get the user information
+      summary: Get the user information by its Id
       operationId: getUser
       description: Get user information
       parameters:
         - in: path
-          name: user-id
+          name: userId
           description: the user ID
           required: true
           schema:
             type: string
       responses:
         '200':
-          description: search result
+          description: OK
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-        '204':
-          description: no content about the room was found
         '404':
           description: User not found
         '500':
           description: server error occurred
 
+    delete:
+      tags:
+        - User API
+      summary: Delete a user by ID
+      parameters:
+        - name: userId
+          in: path
+          description: The ID of the user to delete
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: User deleted
+        '404':
+          description: User not found
+
+  /api/users/:
+    post:
+      tags:
+        - User API
+      summary: Add a new user
+      requestBody:
+        description: User object to add
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          description: User added
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
 components:
   schemas:
     User:
@@ -59,3 +95,74 @@ components:
         password:
           type: string
           example: Custompwd99!
+      required:
+        - userId
+        - password
+
+    HealthProfessional:
+      type: object
+      properties:
+        healthProfessionalId:
+          type: string
+        name:
+          type: string
+        surname:
+          type: string
+        gender:
+          $ref: '#/components/schemas/Gender'
+        birthdate:
+          $ref: '#/components/schemas/Birthdate'
+        emailAddress:
+          type: string
+        phoneNumber:
+          $ref: '#/components/schemas/PhoneNumber'
+        role:
+          $ref: '#/components/schemas/HealthProfessionalRole'
+      required:
+        - healthProfessionalId
+        - name
+        - surname
+        - gender
+        - birthdate
+        - emailAddress
+        - phoneNumber
+        - role
+
+    Gender:
+      type: string
+      enum: [ MALE, FEMALE, OTHER ]
+
+    Birthdate:
+      type: object
+      properties:
+        year:
+          type: integer
+          format: int32
+        month:
+          type: integer
+          format: int32
+        day:
+          type: integer
+          format: int32
+      required:
+        - year
+        - month
+        - day
+
+    PhoneNumber:
+      type: object
+      properties:
+        countryCode:
+          type: string
+        areaCode:
+          type: string
+        number:
+          type: string
+      required:
+        - countryCode
+        - areaCode
+        - number
+
+    HealthProfessionalRole:
+      type: string
+      enum: [ DOCTOR, NURSE, THERAPIST ]
