@@ -4,7 +4,7 @@ servers:
     url: http://localhost:<port>/api
 info:
   description: This is the API of the User Management Integration microservice within the Smart Operating Block project.
-  version: "0.1.0"
+  version: "1.0.0"
   title: User Management Integration API
   contact:
     email: info@smartoperatingblock.com
@@ -84,6 +84,88 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
+
+  /api/healthprofessionals/{healthProfessionalId}:
+    get:
+      tags:
+        - Health Professional API
+      summary: Get a health professional by ID
+      parameters:
+        - name: healthProfessionalId
+          in: path
+          description: The ID of the health professional to get
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthProfessional'
+        '404':
+          description: Health professional not found
+    delete:
+      tags:
+        - Health Professional API
+      summary: Delete a health professional by ID
+      parameters:
+        - name: healthProfessionalId
+          in: path
+          description: The ID of the health professional to delete
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Health professional deleted
+        '404':
+          description: Health professional not found
+
+  /api/healthprofessionals/:
+    post:
+      tags:
+        - Health Professional API
+      summary: Add a new health professional
+      requestBody:
+        description: Health professional object to add
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/HealthProfessional'
+      responses:
+        '201':
+          description: Health professional added
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthProfessional'
+
+  /api/auth/:
+    post:
+      tags:
+        - Authentication API
+      summary: Authenticate a user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                  description: The ID of the user to authenticate
+                password:
+                  type: string
+                  description: The password of the user to authenticate
+      responses:
+        '200':
+          description: successful authenticate the user
+        '401':
+          description: authentication failed
+
 components:
   schemas:
     User:
@@ -111,7 +193,7 @@ components:
         gender:
           $ref: '#/components/schemas/Gender'
         birthdate:
-          $ref: '#/components/schemas/Birthdate'
+          type: string
         emailAddress:
           type: string
         phoneNumber:
