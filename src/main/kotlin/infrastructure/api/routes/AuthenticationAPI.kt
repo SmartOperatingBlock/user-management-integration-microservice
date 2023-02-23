@@ -26,7 +26,7 @@ fun Route.authAPI(provider: Provider) {
         if (AuthenticationUseCase(
                 call.parameters["password"].toString(),
                 call.parameters["id"].toString(),
-                UserController(provider.userDatabaseManager, provider.userDigitalTwinsManager)
+                UserController(provider.userDatabaseManager)
             ).execute()
         ) {
             call.respond(HttpStatusCode.OK)

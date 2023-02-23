@@ -30,10 +30,7 @@ fun Route.userAPI(provider: Provider) {
         val userId = call.parameters["userId"].toString()
         UserServices.GetUser(
             userId,
-            UserController(
-                provider.userDatabaseManager,
-                provider.userDigitalTwinsManager
-            )
+            UserController(provider.userDatabaseManager)
         ).execute().apply {
             if (this != null) {
                 call.respond(HttpStatusCode.OK, this)
@@ -47,10 +44,7 @@ fun Route.userAPI(provider: Provider) {
         val userId = call.parameters["userId"].toString()
         UserServices.DeleteUser(
             userId,
-            UserController(
-                provider.userDatabaseManager,
-                provider.userDigitalTwinsManager
-            )
+            UserController(provider.userDatabaseManager)
         ).execute().apply {
             if (this) {
                 call.respond(HttpStatusCode.NoContent)
@@ -64,7 +58,7 @@ fun Route.userAPI(provider: Provider) {
         val user = call.receive<User>()
         UserServices.CreateUser(
             user,
-            UserController(provider.userDatabaseManager, provider.userDigitalTwinsManager)
+            UserController(provider.userDatabaseManager)
         ).execute().apply {
             if (this != null) {
                 call.respond(HttpStatusCode.Created)

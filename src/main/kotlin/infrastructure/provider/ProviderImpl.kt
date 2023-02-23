@@ -11,7 +11,6 @@ package infrastructure.provider
 import application.controller.manager.HealthProfessionalDatabaseManager
 import application.controller.manager.HealthProfessionalDigitalTwinsManager
 import application.controller.manager.UserDatabaseManager
-import application.controller.manager.UserDigitalTwinsManager
 import infrastructure.database.MongoClient
 import infrastructure.digitaltwins.AzureDTClient
 
@@ -21,8 +20,6 @@ import infrastructure.digitaltwins.AzureDTClient
 class ProviderImpl : Provider {
 
     override val userDatabaseManager: UserDatabaseManager by lazy { MongoClient() }
-
-    override val userDigitalTwinsManager: UserDigitalTwinsManager by lazy { AzureDTClient() }
 
     override val healthProfessionalDatabaseManager: HealthProfessionalDatabaseManager by lazy { MongoClient() }
 

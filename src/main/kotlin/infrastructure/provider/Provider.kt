@@ -11,7 +11,6 @@ package infrastructure.provider
 import application.controller.manager.HealthProfessionalDatabaseManager
 import application.controller.manager.HealthProfessionalDigitalTwinsManager
 import application.controller.manager.UserDatabaseManager
-import application.controller.manager.UserDigitalTwinsManager
 
 /**
  * It's responsible to provide the [userDatabaseManager], [userDigitalTwinsManager],
@@ -22,9 +21,6 @@ interface Provider {
 
     /** The manager of user operations inside database. */
     val userDatabaseManager: UserDatabaseManager
-
-    /** The manager of user digital twin. */
-    val userDigitalTwinsManager: UserDigitalTwinsManager
 
     /** The manager of health professionals operations inside database. */
     val healthProfessionalDatabaseManager: HealthProfessionalDatabaseManager
