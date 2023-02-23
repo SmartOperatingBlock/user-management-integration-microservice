@@ -29,4 +29,14 @@ data class User(
             throw IllegalArgumentException("Invalid user password!")
         }
     }
+
+    override fun equals(other: Any?): Boolean =
+        when (other) {
+            is User -> userId == other.userId
+            else -> false
+        }
+
+    override fun hashCode(): Int {
+        return userId.hashCode()
+    }
 }

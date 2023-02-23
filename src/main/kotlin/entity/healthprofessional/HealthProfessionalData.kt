@@ -37,6 +37,16 @@ object HealthProfessionalData {
                 throw IllegalArgumentException("Invalid HealthProfessional ID!")
             }
         }
+
+        override fun equals(other: Any?): Boolean =
+            when (other) {
+                is HealthProfessional -> healthProfessionalId == other.healthProfessionalId
+                else -> false
+            }
+
+        override fun hashCode(): Int {
+            return healthProfessionalId.hashCode()
+        }
     }
 
     /** All types of Health professional gender. */
