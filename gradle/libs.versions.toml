@@ -2,10 +2,11 @@
 kotlin = "1.8.10"
 kotest = "5.5.5"
 ktor = "2.2.2"
+kmongo = "4.8.0"
 
 [libraries]
 archunit = { module = "com.tngtech.archunit:archunit-junit5", version = "1.0.1" }
-kmongo = { module = "org.litote.kmongo:kmongo", version = "4.8.0" }
+kmongo = { module = "org.litote.kmongo:kmongo", version.ref = "kmongo" }
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
 kotest-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
 kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
