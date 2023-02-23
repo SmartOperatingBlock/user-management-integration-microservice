@@ -197,7 +197,7 @@ components:
         emailAddress:
           type: string
         phoneNumber:
-          $ref: '#/components/schemas/PhoneNumber'
+          type: string
         role:
           $ref: '#/components/schemas/HealthProfessionalRole'
       required:
@@ -213,37 +213,6 @@ components:
     Gender:
       type: string
       enum: [ MALE, FEMALE, OTHER ]
-
-    Birthdate:
-      type: object
-      properties:
-        year:
-          type: integer
-          format: int32
-        month:
-          type: integer
-          format: int32
-        day:
-          type: integer
-          format: int32
-      required:
-        - year
-        - month
-        - day
-
-    PhoneNumber:
-      type: object
-      properties:
-        countryCode:
-          type: string
-        areaCode:
-          type: string
-        number:
-          type: string
-      required:
-        - countryCode
-        - areaCode
-        - number
 
     HealthProfessionalRole:
       type: string
