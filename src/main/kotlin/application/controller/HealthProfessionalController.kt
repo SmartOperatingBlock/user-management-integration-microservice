@@ -23,12 +23,12 @@ class HealthProfessionalController(
 ) : HealthProfessionalRepository {
 
     override fun createHealthProfessional(healthProfessional: HealthProfessional): HealthProfessional? =
-        dtManager.createHealthProfessional(healthProfessional).run {
+        dtManager.createHealthProfessional(healthProfessional).let {
             dbManager.createHealthProfessional(healthProfessional)
         }
 
     override fun deleteHealthProfessional(healthProfessionalId: String): Boolean =
-        dtManager.deleteHealthProfessional(healthProfessionalId).run {
+        dtManager.deleteHealthProfessional(healthProfessionalId).let {
             dbManager.deleteHealthProfessional(healthProfessionalId)
         }
 

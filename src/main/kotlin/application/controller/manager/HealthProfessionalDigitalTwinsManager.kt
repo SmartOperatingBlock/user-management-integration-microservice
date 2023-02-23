@@ -16,8 +16,8 @@ import entity.healthprofessional.HealthProfessionalData.HealthProfessional
 interface HealthProfessionalDigitalTwinsManager {
 
     /** Create a new [healthProfessional] Digital Twin. */
-    fun createHealthProfessional(healthProfessional: HealthProfessional)
+    fun createHealthProfessional(healthProfessional: HealthProfessional): Boolean
 
     /** Delete the Digital Twin of the given [healthProfessionalId]. */
-    fun deleteHealthProfessional(healthProfessionalId: String)
+    fun deleteHealthProfessional(healthProfessionalId: String): Boolean
 }

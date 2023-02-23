@@ -21,6 +21,6 @@ interface HealthProfessionalDatabaseManager {
     /** Delete a health professional from the database given its [healthProfessionalId]. */
     fun deleteHealthProfessional(healthProfessionalId: String): Boolean
 
-    /** Retrieve an health professional from the database given its [healthProfessionalId]. */
+    /** Retrieve a health professional from the database given its [healthProfessionalId]. */
     fun getHealthProfessional(healthProfessionalId: String): HealthProfessional?
 }
