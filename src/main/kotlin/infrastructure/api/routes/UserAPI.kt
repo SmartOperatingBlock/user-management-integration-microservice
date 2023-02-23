@@ -9,11 +9,12 @@
 package infrastructure.api.routes
 
 import application.controller.UserController
-import application.service.UserService
+import application.service.UserServices
 import entity.user.User
 import infrastructure.provider.Provider
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.call
+import io.ktor.server.request.receive
 import io.ktor.server.response.respond
 import io.ktor.server.routing.Route
 import io.ktor.server.routing.delete
@@ -25,36 +26,48 @@ import io.ktor.server.routing.post
  */
 fun Route.userAPI(provider: Provider) {
 
-    with(UserService(UserController(provider.userDatabaseManager, provider.userDigitalTwinsManager))) {
-
-        get("/api/users/{userId}") {
-            val userId = call.parameters["userId"].toString()
-            val user: User? = getUser(userId)
-            if (user != null) {
-                call.respond(HttpStatusCode.OK, user)
+    get("/api/users/{userId}") {
+        val userId = call.parameters["userId"].toString()
+        UserServices.GetUser(
+            userId,
+            UserController(
+                provider.userDatabaseManager,
+                provider.userDigitalTwinsManager
+            )
+        ).execute().apply {
+            if (this != null) {
+                call.respond(HttpStatusCode.OK, this)
             } else {
                 call.respond(HttpStatusCode.NotFound, "User: $userId not found!")
             }
         }
+    }
 
-        delete("/api/users/{userId}") {
-            val userId = call.parameters["userId"].toString()
-            val deleted = deleteUser(userId)
-            if (deleted) {
+    delete("/api/users/{userId}") {
+        val userId = call.parameters["userId"].toString()
+        UserServices.DeleteUser(
+            userId,
+            UserController(
+                provider.userDatabaseManager,
+                provider.userDigitalTwinsManager
+            )
+        ).execute().apply {
+            if (this) {
                 call.respond(HttpStatusCode.NoContent)
             } else {
                 call.respond(HttpStatusCode.NotFound, "User: $userId not found!")
             }
         }
+    }
 
-        post("/api/users/") {
-            val userId = call.parameters["userId"].toString()
-            val password = call.parameters["password"].toString()
-            if (getUser(userId) == null) {
-                val user: User? = createUser(User(userId, password))
-                if (user != null) {
-                    call.respond(HttpStatusCode.Accepted)
-                }
+    post("/api/users/") {
+        val user = call.receive<User>()
+        UserServices.CreateUser(
+            user,
+            UserController(provider.userDatabaseManager, provider.userDigitalTwinsManager)
+        ).execute().apply {
+            if (this != null) {
+                call.respond(HttpStatusCode.Created)
             } else {
                 call.respond(HttpStatusCode.Conflict)
             }
