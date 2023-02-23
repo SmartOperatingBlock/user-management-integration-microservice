@@ -15,7 +15,9 @@ import entity.user.User
 import org.litote.kmongo.KMongo
 import org.litote.kmongo.eq
 import org.litote.kmongo.findOne
+import org.litote.kmongo.findOneById
 import org.litote.kmongo.getCollection
+import org.litote.kmongo.insertOne
 
 /**
  * The Mongo client.
@@ -39,22 +41,26 @@ class MongoClient : UserDatabaseManager, HealthProfessionalDatabaseManager {
     private val healthProfessionalCollection =
         client.getDatabase(databaseName).getCollection<HealthProfessional>("health_professionals")
 
-    override fun createUser(user: User): User? {
-        TODO("Not yet implemented")
-    }
+    override fun createUser(user: User): User? =
+        userCollection.insertOne(user).let { result ->
+            result.insertedId?.let {
+                userCollection.findOneById(it)
+            }
+        }
 
-    override fun createHealthProfessional(healthProfessional: HealthProfessional): HealthProfessional? {
-        TODO("Not yet implemented")
-    }
+    override fun createHealthProfessional(healthProfessional: HealthProfessional): HealthProfessional? =
+        healthProfessionalCollection.insertOne(healthProfessional).let { result ->
+            result.insertedId?.let {
+                healthProfessionalCollection.findOneById(it)
+            }
+        }
 
-    override fun deleteUser(userId: String): Boolean {
-        println("deleting user")
-        return false
-    }
+    override fun deleteUser(userId: String): Boolean =
+        userCollection.deleteOne(User::userId eq userId).deletedCount > 0
 
-    override fun deleteHealthProfessional(healthProfessionalId: String): Boolean {
-        TODO("Not yet implemented")
-    }
+    override fun deleteHealthProfessional(healthProfessionalId: String): Boolean =
+        healthProfessionalCollection.deleteOne(HealthProfessional::healthProfessionalId eq healthProfessionalId)
+            .deletedCount > 0
 
     override fun getUser(userId: String): User? =
         userCollection.findOne(User::userId eq userId)
