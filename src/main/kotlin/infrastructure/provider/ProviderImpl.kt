@@ -12,8 +12,8 @@ import application.controller.manager.HealthProfessionalDatabaseManager
 import application.controller.manager.HealthProfessionalDigitalTwinsManager
 import application.controller.manager.UserDatabaseManager
 import application.controller.manager.UserDigitalTwinsManager
-import infrastructure.db.MongoClient
-import infrastructure.dt.AzureDTClient
+import infrastructure.database.MongoClient
+import infrastructure.digitaltwins.AzureDTClient
 
 /**
  * The implementation of the [Provider] interface.

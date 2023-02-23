@@ -6,7 +6,7 @@
  * https://opensource.org/licenses/MIT.
  */
 
-package infrastructure.dt
+package infrastructure.digitaltwins
 
 import application.controller.manager.HealthProfessionalDigitalTwinsManager
 import application.controller.manager.UserDigitalTwinsManager

@@ -6,7 +6,7 @@
  * https://opensource.org/licenses/MIT.
  */
 
-package infrastructure.db
+package infrastructure.database
 
 import application.controller.manager.HealthProfessionalDatabaseManager
 import application.controller.manager.UserDatabaseManager
@@ -17,7 +17,6 @@ import org.litote.kmongo.eq
 import org.litote.kmongo.findOne
 import org.litote.kmongo.findOneById
 import org.litote.kmongo.getCollection
-import org.litote.kmongo.insertOne
 
 /**
  * The Mongo client.
