@@ -20,15 +20,12 @@ import infrastructure.dt.AzureDTClient
  */
 class ProviderImpl : Provider {
 
-    override val userDatabaseManager: UserDatabaseManager by
-      lazy { MongoClient() }
+    override val userDatabaseManager: UserDatabaseManager by lazy { MongoClient() }
 
-    override val userDigitalTwinsManager: UserDigitalTwinsManager by
-      lazy { AzureDTClient() }
+    override val userDigitalTwinsManager: UserDigitalTwinsManager by lazy { AzureDTClient() }
 
-    override val healthProfessionalDatabaseManager: HealthProfessionalDatabaseManager by
-      lazy { MongoClient() }
+    override val healthProfessionalDatabaseManager: HealthProfessionalDatabaseManager by lazy { MongoClient() }
 
     override val healthProfessionalDigitalTwinsManager: HealthProfessionalDigitalTwinsManager by
-      lazy { AzureDTClient() }
+    lazy { AzureDTClient() }
 }
