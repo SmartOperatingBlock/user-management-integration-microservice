@@ -29,14 +29,12 @@ class MongoClient : UserDatabaseManager, HealthProfessionalDatabaseManager {
         }
     }
 
-    companion object {
-        /** The name of the database. */
-        const val databaseName = "user_management"
-    }
+    private val client =
+        KMongo.createClient(System.getenv("USER_MANAGEMENT_MONGODB_URL"))
 
-    private val client = KMongo.createClient(System.getenv("USER_MANAGEMENT_MONGODB_URL"))
     private val userCollection =
         client.getDatabase(databaseName).getCollection<User>("users")
+
     private val healthProfessionalCollection =
         client.getDatabase(databaseName).getCollection<HealthProfessional>("health_professionals")
 
@@ -66,4 +64,9 @@ class MongoClient : UserDatabaseManager, HealthProfessionalDatabaseManager {
 
     override fun getHealthProfessional(healthProfessionalId: String): HealthProfessional? =
         healthProfessionalCollection.findOne(HealthProfessional::healthProfessionalId eq healthProfessionalId)
+
+    companion object {
+        /** The name of the database. */
+        const val databaseName = "user_management"
+    }
 }
