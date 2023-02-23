@@ -21,6 +21,8 @@ repositories {
 }
 
 dependencies {
+    implementation(libs.azure.digital.twins)
+    implementation(libs.azure.identity)
     implementation(libs.kmongo)
     implementation(libs.kotlin.stdlib)
     implementation(libs.ktor.server.core)
