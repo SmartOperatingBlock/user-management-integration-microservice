@@ -12,17 +12,32 @@ import application.controller.manager.HealthProfessionalDatabaseManager
 import application.controller.manager.UserDatabaseManager
 import entity.healthprofessional.HealthProfessionalData.HealthProfessional
 import entity.user.User
+import org.litote.kmongo.KMongo
+import org.litote.kmongo.eq
+import org.litote.kmongo.findOne
+import org.litote.kmongo.getCollection
 
 /**
  * The Mongo client.
  */
 class MongoClient : UserDatabaseManager, HealthProfessionalDatabaseManager {
 
-//    init {
-//        requireNotNull(System.getenv("USER_MANAGEMENT_MONGODB_URL")) {
-//            println("Please provide the User Management MongoDB connection string!")
-//        }
-//    }
+    init {
+        checkNotNull(System.getenv("USER_MANAGEMENT_MONGODB_URL")) {
+            "Please provide the User Management MongoDB connection string!"
+        }
+    }
+
+    companion object {
+        /** The name of the database. */
+        const val databaseName = "user_management"
+    }
+
+    private val client = KMongo.createClient(System.getenv("USER_MANAGEMENT_MONGODB_URL"))
+    private val userCollection =
+        client.getDatabase(databaseName).getCollection<User>("users")
+    private val healthProfessionalCollection =
+        client.getDatabase(databaseName).getCollection<HealthProfessional>("health_professionals")
 
     override fun createUser(user: User): User? {
         TODO("Not yet implemented")
@@ -41,16 +56,9 @@ class MongoClient : UserDatabaseManager, HealthProfessionalDatabaseManager {
         TODO("Not yet implemented")
     }
 
-    override fun getUser(userId: String): User? {
-        TODO("Not yet implemented")
-    }
+    override fun getUser(userId: String): User? =
+        userCollection.findOne(User::userId eq userId)
 
-    override fun getHealthProfessional(healthProfessionalId: String): HealthProfessional? {
-        TODO("Not yet implemented")
-    }
-
-//    private val client =
-//    KMongo.createClient(
-//    "mongodb+srv://user:admin@usermanagementcluster.ql5hmbx.mongodb.net/?retryWrites=true&w=majority"
-//    )
+    override fun getHealthProfessional(healthProfessionalId: String): HealthProfessional? =
+        healthProfessionalCollection.findOne(HealthProfessional::healthProfessionalId eq healthProfessionalId)
 }
