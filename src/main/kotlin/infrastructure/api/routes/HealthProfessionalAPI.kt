@@ -9,8 +9,8 @@
 package infrastructure.api.routes
 
 import application.controller.HealthProfessionalController
-import infrastructure.provider.Provider
 import application.service.HealthProfessionalService
+import infrastructure.provider.Provider
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.call
 import io.ktor.server.response.respond
@@ -22,10 +22,14 @@ import io.ktor.server.routing.get
  */
 fun Route.healthProfessionalAPI(provider: Provider) {
 
-    with(HealthProfessionalService(HealthProfessionalController(
-        provider.healthProfessionalDatabaseManager,
-        provider.healthProfessionalDigitalTwinsManager,
-    ))) {
+    with(
+        HealthProfessionalService(
+            HealthProfessionalController(
+                provider.healthProfessionalDatabaseManager,
+                provider.healthProfessionalDigitalTwinsManager,
+            )
+        )
+    ) {
 
         get("/api/healthProfessionals/{healthProfessionalId}") {
             call.parameters["healthProfessionalId"]?.let { healthProfessionalId ->
