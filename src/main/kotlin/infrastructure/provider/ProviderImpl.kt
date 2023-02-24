@@ -19,10 +19,21 @@ import infrastructure.digitaltwins.AzureDTClient
  */
 class ProviderImpl : Provider {
 
-    override val userDatabaseManager: UserDatabaseManager by lazy { MongoClient() }
+    init {
+        checkNotNull(System.getenv("USER_MANAGEMENT_MONGODB_URL")) {
+            "Please provide a valid MongoDB connection String! "
+        }
+    }
 
-    override val healthProfessionalDatabaseManager: HealthProfessionalDatabaseManager by lazy { MongoClient() }
+    override val userDatabaseManager: UserDatabaseManager by lazy {
+        MongoClient(System.getenv("USER_MANAGEMENT_MONGODB_URL"))
+    }
 
-    override val healthProfessionalDigitalTwinsManager: HealthProfessionalDigitalTwinsManager by
-    lazy { AzureDTClient() }
+    override val healthProfessionalDatabaseManager: HealthProfessionalDatabaseManager by lazy {
+        MongoClient(System.getenv("USER_MANAGEMENT_MONGODB_URL"))
+    }
+
+    override val healthProfessionalDigitalTwinsManager: HealthProfessionalDigitalTwinsManager by lazy {
+        AzureDTClient()
+    }
 }

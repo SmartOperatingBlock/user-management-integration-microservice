@@ -10,27 +10,28 @@ package infrastructure.database
 
 import application.controller.manager.HealthProfessionalDatabaseManager
 import application.controller.manager.UserDatabaseManager
+import com.mongodb.client.MongoDatabase
 import entity.healthprofessional.HealthProfessionalData.HealthProfessional
 import entity.user.User
 import org.litote.kmongo.KMongo
 import org.litote.kmongo.eq
 import org.litote.kmongo.findOne
-import org.litote.kmongo.findOneById
 import org.litote.kmongo.getCollection
 
 /**
  * The Mongo client.
  */
-class MongoClient : UserDatabaseManager, HealthProfessionalDatabaseManager {
+class MongoClient(
+    connectionString: String
+) : UserDatabaseManager, HealthProfessionalDatabaseManager {
 
     init {
-        checkNotNull(System.getenv("USER_MANAGEMENT_MONGODB_URL")) {
+        check(connectionString.isNotEmpty()) {
             "Please provide the User Management MongoDB connection string!"
         }
     }
 
-    private val client =
-        KMongo.createClient(System.getenv("USER_MANAGEMENT_MONGODB_URL"))
+    private val client = KMongo.createClient(connectionString)
 
     private val userCollection =
         client.getDatabase(databaseName).getCollection<User>("users")
@@ -38,18 +39,17 @@ class MongoClient : UserDatabaseManager, HealthProfessionalDatabaseManager {
     private val healthProfessionalCollection =
         client.getDatabase(databaseName).getCollection<HealthProfessional>("health_professionals")
 
+    /** Return a database given its [databaseName]. **/
+    fun getDatabase(databaseName: String): MongoDatabase = client.getDatabase(databaseName)
+
     override fun createUser(user: User): User? =
-        userCollection.insertOne(user).let { result ->
-            result.insertedId?.let {
-                userCollection.findOneById(it)
-            }
+        userCollection.insertOne(user).run {
+            getUser(user.userId)
         }
 
     override fun createHealthProfessional(healthProfessional: HealthProfessional): HealthProfessional? =
-        healthProfessionalCollection.insertOne(healthProfessional).let { result ->
-            result.insertedId?.let {
-                healthProfessionalCollection.findOneById(it)
-            }
+        healthProfessionalCollection.insertOne(healthProfessional).run {
+            getHealthProfessional(healthProfessional.healthProfessionalId)
         }
 
     override fun deleteUser(userId: String): Boolean =
