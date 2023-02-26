@@ -8,12 +8,15 @@
 
 package entity.healthprofessional
 
+import kotlinx.serialization.Serializable
+
 /**
  * Module with all the Health Professionals data.
  */
 object HealthProfessionalData {
 
     /** The health professional model. */
+    @Serializable
     data class HealthProfessional(
         /** The health professional id. */
         val healthProfessionalId: String,

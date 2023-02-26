@@ -10,8 +10,10 @@ package entity.user
 
 import entity.user.UserData.PASSWORD_MAX_LENGTH
 import entity.user.UserData.PASSWORD_MIN_LENGTH
+import kotlinx.serialization.Serializable
 
 /** The user of the Smart Operating block System. */
+@Serializable
 data class User(
 
     /** The identifier of the [User]. */
