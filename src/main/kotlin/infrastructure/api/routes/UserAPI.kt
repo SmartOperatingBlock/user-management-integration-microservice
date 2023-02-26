@@ -54,7 +54,7 @@ fun Route.userAPI(provider: Provider) {
         }
     }
 
-    post("/api/users/") {
+    post("/api/users") {
         val user = call.receive<User>()
         UserServices.CreateUser(
             user,

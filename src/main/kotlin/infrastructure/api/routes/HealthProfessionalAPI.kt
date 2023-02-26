@@ -60,7 +60,7 @@ fun Route.healthProfessionalAPI(provider: Provider) {
         }
     }
 
-    post("/api/healthProfessionals/") {
+    post("/api/healthProfessionals") {
         val healthProfessional = call.receive<HealthProfessionalData.HealthProfessional>()
         HealthProfessionalServices.CreateHealthProfessional(
             healthProfessional,
