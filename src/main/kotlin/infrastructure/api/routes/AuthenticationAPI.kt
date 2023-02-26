@@ -24,8 +24,8 @@ fun Route.authAPI(provider: Provider) {
 
     post("/api/auth") {
         if (AuthenticationUseCase(
-                call.parameters["password"].toString(),
                 call.parameters["id"].toString(),
+                call.parameters["password"].toString(),
                 UserController(provider.userDatabaseManager)
             ).execute()
         ) {
