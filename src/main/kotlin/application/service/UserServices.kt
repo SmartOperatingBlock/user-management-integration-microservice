@@ -21,7 +21,7 @@ object UserServices {
      */
     class CreateUser(private val user: User, private val userRepository: UserRepository) : ApplicationService<User?> {
         override fun execute(): User? =
-            if (userRepository.getUser(user.userId) != null) {
+            if (userRepository.getUser(user.userId) == null) {
                 userRepository.createUser(user)
             } else null
     }

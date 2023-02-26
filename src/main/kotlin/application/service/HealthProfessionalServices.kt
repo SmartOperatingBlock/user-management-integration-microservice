@@ -24,7 +24,7 @@ object HealthProfessionalServices {
         private val healthProfessionalRepository: HealthProfessionalRepository
     ) : ApplicationService<HealthProfessional?> {
         override fun execute(): HealthProfessional? =
-            if (healthProfessionalRepository.getHealthProfessional(healthProfessional.healthProfessionalId) != null) {
+            if (healthProfessionalRepository.getHealthProfessional(healthProfessional.healthProfessionalId) == null) {
                 healthProfessionalRepository.createHealthProfessional(healthProfessional)
             } else null
     }
