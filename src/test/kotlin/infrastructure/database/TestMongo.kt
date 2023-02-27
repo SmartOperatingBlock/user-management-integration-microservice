@@ -8,6 +8,7 @@
 
 package infrastructure.database
 
+import com.sun.jna.Platform
 import entity.healthprofessional.HealthProfessionalData
 import entity.user.User
 import io.kotest.core.extensions.install
@@ -31,40 +32,54 @@ class TestMongo : StringSpec({
     )
     val mongoClient = MongoClient("mongodb://localhost:27017")
 
-    install(TestContainerExtension("mongo:latest")) {
-        withExposedPorts(27017)
-    }.start()
+    if (Platform.getOSType() == Platform.LINUX) {
+        install(TestContainerExtension("mongo:latest")) {
+            withExposedPorts(27017)
+        }.start()
+    }
 
     beforeAny {
         mongoClient.getDatabase("user_management").drop()
     }
 
-    "test the creation of a user in the database" {
+    "test the creation of a user in the database".config(
+        enabled = Platform.getOSType() == Platform.LINUX
+    ) {
         mongoClient.createUser(mockUser) shouldNotBe null
     }
 
-    "test the creation of a health professional in the database" {
+    "test the creation of a health professional in the database".config(
+        enabled = Platform.getOSType() == Platform.LINUX
+    ) {
         mongoClient.createHealthProfessional(mockHealthProfessional) shouldNotBe null
     }
 
-    "test the retrieve of a user in the database" {
+    "test the retrieve of a user in the database".config(
+        enabled = Platform.getOSType() == Platform.LINUX
+    ) {
         mongoClient.createUser(mockUser)
         mongoClient.getUser(mockUser.userId) shouldNotBe null
     }
 
-    "test the retrieve of a health professional in the database" {
+    "test the retrieve of a health professional in the database".config(
+        enabled = Platform.getOSType() == Platform.LINUX
+    ) {
         mongoClient.createHealthProfessional(mockHealthProfessional)
         mongoClient.getHealthProfessional(mockHealthProfessional.healthProfessionalId) shouldNotBe null
     }
 
-    "test the delete of a user in the database" {
+    "test the delete of a user in the database".config(
+        enabled = Platform.getOSType() == Platform.LINUX
+    ) {
         mongoClient.createUser(mockUser)
         mongoClient.getUser(mockUser.userId) shouldNotBe null
         mongoClient.deleteUser(mockUser.userId)
         mongoClient.getUser(mockUser.userId) shouldBe null
     }
 
-    "test the delete of a health professional in the database" {
+    "test the delete of a health professional in the database".config(
+        enabled = Platform.getOSType() == Platform.LINUX
+    ) {
         mongoClient.createHealthProfessional(mockHealthProfessional)
         mongoClient.getHealthProfessional(mockHealthProfessional.healthProfessionalId) shouldNotBe null
         mongoClient.deleteHealthProfessional(mockHealthProfessional.healthProfessionalId)
