@@ -11,11 +11,12 @@ package infrastructure.database
 import com.sun.jna.Platform
 import entity.healthprofessional.HealthProfessionalData
 import entity.user.User
-import io.kotest.core.extensions.install
 import io.kotest.core.spec.style.StringSpec
-import io.kotest.extensions.testcontainers.TestContainerExtension
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.shouldNotBe
+import org.testcontainers.containers.MongoDBContainer
+import org.testcontainers.utility.DockerImageName
+import java.time.Duration
 
 class TestMongo : StringSpec({
 
@@ -30,17 +31,30 @@ class TestMongo : StringSpec({
         "+39 3328455753",
         HealthProfessionalData.HealthProfessionalRole.ANESTHETIST
     )
-    val mongoClient = MongoClient("mongodb://localhost:27017")
 
-    if (Platform.getOSType() == Platform.LINUX) {
-        install(TestContainerExtension("mongo:latest")) {
-            withExposedPorts(27017)
-        }.start()
+    lateinit var mongoClient: MongoClient
+
+    lateinit var mongoContainer: MongoDBContainer
+
+    beforeSpec {
+        if (Platform.getOSType() == Platform.LINUX) {
+            mongoContainer = MongoDBContainer(
+                DockerImageName.parse("mongo:latest")
+            ).withStartupTimeout(Duration.ofSeconds(60L))
+            mongoContainer.start()
+        }
+        mongoClient = MongoClient("mongodb://localhost:27017")
     }
 
-    beforeAny {
-        mongoClient.getDatabase("user_management").drop()
+    afterSpec {
+        if (Platform.getOSType() == Platform.LINUX) {
+            mongoContainer.stop()
+        }
     }
+
+//    beforeAny {
+//        mongoClient.getDatabase("user_management").drop()
+//    }
 
     "test the creation of a user in the database".config(
         enabled = Platform.getOSType() == Platform.LINUX
