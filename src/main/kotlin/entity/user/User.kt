@@ -23,12 +23,12 @@ data class User(
     val password: String,
 ) {
     init {
-        require(userId.isNotEmpty()) {
-            throw IllegalArgumentException("Invalid userId!")
+        check(userId.isNotEmpty()) {
+            "Invalid userId!"
         }
 
-        require(password.length in PASSWORD_MIN_LENGTH..PASSWORD_MAX_LENGTH) {
-            throw IllegalArgumentException("Invalid user password!")
+        check(password.length in PASSWORD_MIN_LENGTH..PASSWORD_MAX_LENGTH) {
+            "Invalid user password!"
         }
     }
 

@@ -36,8 +36,8 @@ object HealthProfessionalData {
         val role: HealthProfessionalRole
     ) {
         init {
-            require(healthProfessionalId.isNotEmpty()) {
-                throw IllegalArgumentException("Invalid HealthProfessional ID!")
+            check(healthProfessionalId.isNotEmpty()) {
+                "Invalid HealthProfessional ID!"
             }
         }
 
