@@ -11,18 +11,17 @@ package entity.user
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.shouldBe
-import java.lang.IllegalArgumentException
 
 class UserTest : StringSpec({
 
     "An User should not be empty" {
-        shouldThrow<IllegalArgumentException> {
+        shouldThrow<IllegalStateException> {
             User("", "")
         }
     }
 
     "A short password should throw exception" {
-        shouldThrow<IllegalArgumentException> {
+        shouldThrow<IllegalStateException> {
             User("userID", "short")
         }
     }

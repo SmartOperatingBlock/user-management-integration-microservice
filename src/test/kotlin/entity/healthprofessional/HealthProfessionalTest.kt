@@ -29,7 +29,7 @@ class HealthProfessionalTest : StringSpec({
     )
 
     "An Healh Professional ID should not be empty" {
-        shouldThrow<IllegalArgumentException> {
+        shouldThrow<IllegalStateException> {
             HealthProfessional(
                 "",
                 "Jack",
