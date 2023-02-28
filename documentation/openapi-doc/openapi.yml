@@ -1,0 +1,219 @@
+openapi: 3.0.0
+servers:
+  - description: User Management Integration microservice
+    url: http://localhost:<port>/api
+info:
+  description: This is the API of the User Management Integration microservice within the Smart Operating Block project.
+  version: "1.0.0"
+  title: User Management Integration API
+  contact:
+    email: info@smartoperatingblock.com
+  license:
+    name: MIT License
+    url: 'https://opensource.org/license/mit/'
+
+tags:
+  - name: User API
+    description: This is the available API to manage and obtain information about users within the Operating Block.
+  - name: Health Professional API
+    description: This is the available API to manage and obtain information about health professionals within the Operating Block.
+  - name: Authentication API
+    description: This is the available API to authenticate users inside the Operating Block.
+
+paths:
+
+  /api/users/{userId}:
+    get:
+      tags:
+        - User API
+      summary: Get the user information by its Id
+      operationId: getUser
+      description: Get user information
+      parameters:
+        - in: path
+          name: userId
+          description: the user ID
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: User not found
+        '500':
+          description: server error occurred
+
+    delete:
+      tags:
+        - User API
+      summary: Delete a user by ID
+      parameters:
+        - name: userId
+          in: path
+          description: The ID of the user to delete
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: User deleted
+        '404':
+          description: User not found
+
+  /api/users/:
+    post:
+      tags:
+        - User API
+      summary: Add a new user
+      requestBody:
+        description: User object to add
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          description: User added
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+
+  /api/healthprofessionals/{healthProfessionalId}:
+    get:
+      tags:
+        - Health Professional API
+      summary: Get a health professional by ID
+      parameters:
+        - name: healthProfessionalId
+          in: path
+          description: The ID of the health professional to get
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthProfessional'
+        '404':
+          description: Health professional not found
+    delete:
+      tags:
+        - Health Professional API
+      summary: Delete a health professional by ID
+      parameters:
+        - name: healthProfessionalId
+          in: path
+          description: The ID of the health professional to delete
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Health professional deleted
+        '404':
+          description: Health professional not found
+
+  /api/healthprofessionals/:
+    post:
+      tags:
+        - Health Professional API
+      summary: Add a new health professional
+      requestBody:
+        description: Health professional object to add
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/HealthProfessional'
+      responses:
+        '201':
+          description: Health professional added
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthProfessional'
+
+  /api/auth/:
+    post:
+      tags:
+        - Authentication API
+      summary: Authenticate a user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                  description: The ID of the user to authenticate
+                password:
+                  type: string
+                  description: The password of the user to authenticate
+      responses:
+        '200':
+          description: successful authenticate the user
+        '401':
+          description: authentication failed
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        userId:
+          type: string
+          example: 00102698
+        password:
+          type: string
+          example: Custompwd99!
+      required:
+        - userId
+        - password
+
+    HealthProfessional:
+      type: object
+      properties:
+        healthProfessionalId:
+          type: string
+        name:
+          type: string
+        surname:
+          type: string
+        gender:
+          $ref: '#/components/schemas/Gender'
+        birthdate:
+          type: string
+        emailAddress:
+          type: string
+        phoneNumber:
+          type: string
+        role:
+          $ref: '#/components/schemas/HealthProfessionalRole'
+      required:
+        - healthProfessionalId
+        - name
+        - surname
+        - gender
+        - birthdate
+        - emailAddress
+        - phoneNumber
+        - role
+
+    Gender:
+      type: string
+      enum: [ MALE, FEMALE, OTHER ]
+
+    HealthProfessionalRole:
+      type: string
+      enum: [ DOCTOR, NURSE, THERAPIST ]
