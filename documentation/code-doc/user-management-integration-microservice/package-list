@@ -1,0 +1,156 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/user-management-integration-microservice/[root]/index.html
+$dokka.location://main/#/PointingToDeclaration/user-management-integration-microservice/[root]/main.html
+$dokka.location:application.controller.manager////PointingToDeclaration/user-management-integration-microservice/application.controller.manager/index.html
+$dokka.location:application.controller.manager/HealthProfessionalDatabaseManager///PointingToDeclaration/user-management-integration-microservice/application.controller.manager/-health-professional-database-manager/index.html
+$dokka.location:application.controller.manager/HealthProfessionalDatabaseManager/createHealthProfessional/#entity.healthprofessional.HealthProfessionalData.HealthProfessional/PointingToDeclaration/user-management-integration-microservice/application.controller.manager/-health-professional-database-manager/create-health-professional.html
+$dokka.location:application.controller.manager/HealthProfessionalDatabaseManager/deleteHealthProfessional/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/application.controller.manager/-health-professional-database-manager/delete-health-professional.html
+$dokka.location:application.controller.manager/HealthProfessionalDatabaseManager/getHealthProfessional/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/application.controller.manager/-health-professional-database-manager/get-health-professional.html
+$dokka.location:application.controller.manager/HealthProfessionalDigitalTwinsManager///PointingToDeclaration/user-management-integration-microservice/application.controller.manager/-health-professional-digital-twins-manager/index.html
+$dokka.location:application.controller.manager/HealthProfessionalDigitalTwinsManager/createHealthProfessional/#entity.healthprofessional.HealthProfessionalData.HealthProfessional/PointingToDeclaration/user-management-integration-microservice/application.controller.manager/-health-professional-digital-twins-manager/create-health-professional.html
+$dokka.location:application.controller.manager/HealthProfessionalDigitalTwinsManager/deleteHealthProfessional/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/application.controller.manager/-health-professional-digital-twins-manager/delete-health-professional.html
+$dokka.location:application.controller.manager/UserDatabaseManager///PointingToDeclaration/user-management-integration-microservice/application.controller.manager/-user-database-manager/index.html
+$dokka.location:application.controller.manager/UserDatabaseManager/createUser/#entity.user.User/PointingToDeclaration/user-management-integration-microservice/application.controller.manager/-user-database-manager/create-user.html
+$dokka.location:application.controller.manager/UserDatabaseManager/deleteUser/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/application.controller.manager/-user-database-manager/delete-user.html
+$dokka.location:application.controller.manager/UserDatabaseManager/getUser/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/application.controller.manager/-user-database-manager/get-user.html
+$dokka.location:application.controller////PointingToDeclaration/user-management-integration-microservice/application.controller/index.html
+$dokka.location:application.controller/HealthProfessionalController///PointingToDeclaration/user-management-integration-microservice/application.controller/-health-professional-controller/index.html
+$dokka.location:application.controller/HealthProfessionalController/HealthProfessionalController/#application.controller.manager.HealthProfessionalDatabaseManager#application.controller.manager.HealthProfessionalDigitalTwinsManager/PointingToDeclaration/user-management-integration-microservice/application.controller/-health-professional-controller/-health-professional-controller.html
+$dokka.location:application.controller/HealthProfessionalController/createHealthProfessional/#entity.healthprofessional.HealthProfessionalData.HealthProfessional/PointingToDeclaration/user-management-integration-microservice/application.controller/-health-professional-controller/create-health-professional.html
+$dokka.location:application.controller/HealthProfessionalController/deleteHealthProfessional/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/application.controller/-health-professional-controller/delete-health-professional.html
+$dokka.location:application.controller/HealthProfessionalController/getHealthProfessional/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/application.controller/-health-professional-controller/get-health-professional.html
+$dokka.location:application.controller/UserController///PointingToDeclaration/user-management-integration-microservice/application.controller/-user-controller/index.html
+$dokka.location:application.controller/UserController/UserController/#application.controller.manager.UserDatabaseManager/PointingToDeclaration/user-management-integration-microservice/application.controller/-user-controller/-user-controller.html
+$dokka.location:application.controller/UserController/createUser/#entity.user.User/PointingToDeclaration/user-management-integration-microservice/application.controller/-user-controller/create-user.html
+$dokka.location:application.controller/UserController/deleteUser/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/application.controller/-user-controller/delete-user.html
+$dokka.location:application.controller/UserController/getUser/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/application.controller/-user-controller/get-user.html
+$dokka.location:application.service////PointingToDeclaration/user-management-integration-microservice/application.service/index.html
+$dokka.location:application.service/ApplicationService///PointingToDeclaration/user-management-integration-microservice/application.service/-application-service/index.html
+$dokka.location:application.service/ApplicationService/execute/#/PointingToDeclaration/user-management-integration-microservice/application.service/-application-service/execute.html
+$dokka.location:application.service/HealthProfessionalServices.CreateHealthProfessional///PointingToDeclaration/user-management-integration-microservice/application.service/-health-professional-services/-create-health-professional/index.html
+$dokka.location:application.service/HealthProfessionalServices.CreateHealthProfessional/CreateHealthProfessional/#entity.healthprofessional.HealthProfessionalData.HealthProfessional#usecase.repository.HealthProfessionalRepository/PointingToDeclaration/user-management-integration-microservice/application.service/-health-professional-services/-create-health-professional/-create-health-professional.html
+$dokka.location:application.service/HealthProfessionalServices.CreateHealthProfessional/execute/#/PointingToDeclaration/user-management-integration-microservice/application.service/-health-professional-services/-create-health-professional/execute.html
+$dokka.location:application.service/HealthProfessionalServices.DeleteHealthProfessional///PointingToDeclaration/user-management-integration-microservice/application.service/-health-professional-services/-delete-health-professional/index.html
+$dokka.location:application.service/HealthProfessionalServices.DeleteHealthProfessional/DeleteHealthProfessional/#kotlin.String#usecase.repository.HealthProfessionalRepository/PointingToDeclaration/user-management-integration-microservice/application.service/-health-professional-services/-delete-health-professional/-delete-health-professional.html
+$dokka.location:application.service/HealthProfessionalServices.DeleteHealthProfessional/execute/#/PointingToDeclaration/user-management-integration-microservice/application.service/-health-professional-services/-delete-health-professional/execute.html
+$dokka.location:application.service/HealthProfessionalServices.GetHealthProfessional///PointingToDeclaration/user-management-integration-microservice/application.service/-health-professional-services/-get-health-professional/index.html
+$dokka.location:application.service/HealthProfessionalServices.GetHealthProfessional/GetHealthProfessional/#kotlin.String#usecase.repository.HealthProfessionalRepository/PointingToDeclaration/user-management-integration-microservice/application.service/-health-professional-services/-get-health-professional/-get-health-professional.html
+$dokka.location:application.service/HealthProfessionalServices.GetHealthProfessional/execute/#/PointingToDeclaration/user-management-integration-microservice/application.service/-health-professional-services/-get-health-professional/execute.html
+$dokka.location:application.service/HealthProfessionalServices///PointingToDeclaration/user-management-integration-microservice/application.service/-health-professional-services/index.html
+$dokka.location:application.service/UserServices.CreateUser///PointingToDeclaration/user-management-integration-microservice/application.service/-user-services/-create-user/index.html
+$dokka.location:application.service/UserServices.CreateUser/CreateUser/#entity.user.User#usecase.repository.UserRepository/PointingToDeclaration/user-management-integration-microservice/application.service/-user-services/-create-user/-create-user.html
+$dokka.location:application.service/UserServices.CreateUser/execute/#/PointingToDeclaration/user-management-integration-microservice/application.service/-user-services/-create-user/execute.html
+$dokka.location:application.service/UserServices.DeleteUser///PointingToDeclaration/user-management-integration-microservice/application.service/-user-services/-delete-user/index.html
+$dokka.location:application.service/UserServices.DeleteUser/DeleteUser/#kotlin.String#usecase.repository.UserRepository/PointingToDeclaration/user-management-integration-microservice/application.service/-user-services/-delete-user/-delete-user.html
+$dokka.location:application.service/UserServices.DeleteUser/execute/#/PointingToDeclaration/user-management-integration-microservice/application.service/-user-services/-delete-user/execute.html
+$dokka.location:application.service/UserServices.GetUser///PointingToDeclaration/user-management-integration-microservice/application.service/-user-services/-get-user/index.html
+$dokka.location:application.service/UserServices.GetUser/GetUser/#kotlin.String#usecase.repository.UserRepository/PointingToDeclaration/user-management-integration-microservice/application.service/-user-services/-get-user/-get-user.html
+$dokka.location:application.service/UserServices.GetUser/execute/#/PointingToDeclaration/user-management-integration-microservice/application.service/-user-services/-get-user/execute.html
+$dokka.location:application.service/UserServices///PointingToDeclaration/user-management-integration-microservice/application.service/-user-services/index.html
+$dokka.location:entity.healthprofessional////PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/index.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.Gender.FEMALE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-gender/-f-e-m-a-l-e/index.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.Gender.MALE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-gender/-m-a-l-e/index.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.Gender.OTHER///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-gender/-o-t-h-e-r/index.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.Gender///PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-gender/index.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.Gender/valueOf/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-gender/value-of.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.Gender/values/#/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-gender/values.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessional///PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional/index.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessional/HealthProfessional/#kotlin.String#kotlin.String#kotlin.String#entity.healthprofessional.HealthProfessionalData.Gender#kotlin.String#kotlin.String#kotlin.String#entity.healthprofessional.HealthProfessionalData.HealthProfessionalRole/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional/-health-professional.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessional/birthdate/#/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional/birthdate.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessional/emailAddress/#/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional/email-address.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessional/equals/#kotlin.Any?/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional/equals.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessional/gender/#/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional/gender.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessional/hashCode/#/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional/hash-code.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessional/healthProfessionalId/#/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional/health-professional-id.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessional/name/#/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional/name.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessional/phoneNumber/#/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional/phone-number.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessional/role/#/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional/role.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessional/surname/#/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional/surname.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessionalRole.ANESTHETIST///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional-role/-a-n-e-s-t-h-e-t-i-s-t/index.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessionalRole.NURSE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional-role/-n-u-r-s-e/index.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessionalRole.SURGEON///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional-role/-s-u-r-g-e-o-n/index.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessionalRole///PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional-role/index.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessionalRole/valueOf/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional-role/value-of.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData.HealthProfessionalRole/values/#/PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/-health-professional-role/values.html
+$dokka.location:entity.healthprofessional/HealthProfessionalData///PointingToDeclaration/user-management-integration-microservice/entity.healthprofessional/-health-professional-data/index.html
+$dokka.location:entity.user////PointingToDeclaration/user-management-integration-microservice/entity.user/index.html
+$dokka.location:entity.user/User///PointingToDeclaration/user-management-integration-microservice/entity.user/-user/index.html
+$dokka.location:entity.user/User/User/#kotlin.String#kotlin.String/PointingToDeclaration/user-management-integration-microservice/entity.user/-user/-user.html
+$dokka.location:entity.user/User/equals/#kotlin.Any?/PointingToDeclaration/user-management-integration-microservice/entity.user/-user/equals.html
+$dokka.location:entity.user/User/hashCode/#/PointingToDeclaration/user-management-integration-microservice/entity.user/-user/hash-code.html
+$dokka.location:entity.user/User/password/#/PointingToDeclaration/user-management-integration-microservice/entity.user/-user/password.html
+$dokka.location:entity.user/User/userId/#/PointingToDeclaration/user-management-integration-microservice/entity.user/-user/user-id.html
+$dokka.location:entity.user/UserData///PointingToDeclaration/user-management-integration-microservice/entity.user/-user-data/index.html
+$dokka.location:entity.user/UserData/PASSWORD_MAX_LENGTH/#/PointingToDeclaration/user-management-integration-microservice/entity.user/-user-data/-p-a-s-s-w-o-r-d_-m-a-x_-l-e-n-g-t-h.html
+$dokka.location:entity.user/UserData/PASSWORD_MIN_LENGTH/#/PointingToDeclaration/user-management-integration-microservice/entity.user/-user-data/-p-a-s-s-w-o-r-d_-m-i-n_-l-e-n-g-t-h.html
+$dokka.location:infrastructure.api.routes////PointingToDeclaration/user-management-integration-microservice/infrastructure.api.routes/index.html
+$dokka.location:infrastructure.api.routes//authAPI/io.ktor.server.routing.Route#infrastructure.provider.Provider/PointingToDeclaration/user-management-integration-microservice/infrastructure.api.routes/auth-a-p-i.html
+$dokka.location:infrastructure.api.routes//healthProfessionalAPI/io.ktor.server.routing.Route#infrastructure.provider.Provider/PointingToDeclaration/user-management-integration-microservice/infrastructure.api.routes/health-professional-a-p-i.html
+$dokka.location:infrastructure.api.routes//userAPI/io.ktor.server.routing.Route#infrastructure.provider.Provider/PointingToDeclaration/user-management-integration-microservice/infrastructure.api.routes/user-a-p-i.html
+$dokka.location:infrastructure.api////PointingToDeclaration/user-management-integration-microservice/infrastructure.api/index.html
+$dokka.location:infrastructure.api/APIRouter.Companion///PointingToDeclaration/user-management-integration-microservice/infrastructure.api/-a-p-i-router/-companion/index.html
+$dokka.location:infrastructure.api/APIRouter.Companion/NETTY_PORT/#/PointingToDeclaration/user-management-integration-microservice/infrastructure.api/-a-p-i-router/-companion/-n-e-t-t-y_-p-o-r-t.html
+$dokka.location:infrastructure.api/APIRouter///PointingToDeclaration/user-management-integration-microservice/infrastructure.api/-a-p-i-router/index.html
+$dokka.location:infrastructure.api/APIRouter/APIRouter/#infrastructure.provider.Provider/PointingToDeclaration/user-management-integration-microservice/infrastructure.api/-a-p-i-router/-a-p-i-router.html
+$dokka.location:infrastructure.api/APIRouter/module/#io.ktor.server.application.Application/PointingToDeclaration/user-management-integration-microservice/infrastructure.api/-a-p-i-router/module.html
+$dokka.location:infrastructure.api/APIRouter/start/#/PointingToDeclaration/user-management-integration-microservice/infrastructure.api/-a-p-i-router/start.html
+$dokka.location:infrastructure.database////PointingToDeclaration/user-management-integration-microservice/infrastructure.database/index.html
+$dokka.location:infrastructure.database/MongoClient.Companion///PointingToDeclaration/user-management-integration-microservice/infrastructure.database/-mongo-client/-companion/index.html
+$dokka.location:infrastructure.database/MongoClient.Companion/databaseName/#/PointingToDeclaration/user-management-integration-microservice/infrastructure.database/-mongo-client/-companion/database-name.html
+$dokka.location:infrastructure.database/MongoClient///PointingToDeclaration/user-management-integration-microservice/infrastructure.database/-mongo-client/index.html
+$dokka.location:infrastructure.database/MongoClient/MongoClient/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/infrastructure.database/-mongo-client/-mongo-client.html
+$dokka.location:infrastructure.database/MongoClient/createHealthProfessional/#entity.healthprofessional.HealthProfessionalData.HealthProfessional/PointingToDeclaration/user-management-integration-microservice/infrastructure.database/-mongo-client/create-health-professional.html
+$dokka.location:infrastructure.database/MongoClient/createUser/#entity.user.User/PointingToDeclaration/user-management-integration-microservice/infrastructure.database/-mongo-client/create-user.html
+$dokka.location:infrastructure.database/MongoClient/deleteHealthProfessional/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/infrastructure.database/-mongo-client/delete-health-professional.html
+$dokka.location:infrastructure.database/MongoClient/deleteUser/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/infrastructure.database/-mongo-client/delete-user.html
+$dokka.location:infrastructure.database/MongoClient/getDatabase/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/infrastructure.database/-mongo-client/get-database.html
+$dokka.location:infrastructure.database/MongoClient/getHealthProfessional/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/infrastructure.database/-mongo-client/get-health-professional.html
+$dokka.location:infrastructure.database/MongoClient/getUser/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/infrastructure.database/-mongo-client/get-user.html
+$dokka.location:infrastructure.digitaltwins.adtpresenter////PointingToDeclaration/user-management-integration-microservice/infrastructure.digitaltwins.adtpresenter/index.html
+$dokka.location:infrastructure.digitaltwins.adtpresenter/HealthProfessionalAdt///PointingToDeclaration/user-management-integration-microservice/infrastructure.digitaltwins.adtpresenter/-health-professional-adt/index.html
+$dokka.location:infrastructure.digitaltwins.adtpresenter/HealthProfessionalAdt/toDigitalTwin/entity.healthprofessional.HealthProfessionalData.HealthProfessional#/PointingToDeclaration/user-management-integration-microservice/infrastructure.digitaltwins.adtpresenter/-health-professional-adt/to-digital-twin.html
+$dokka.location:infrastructure.digitaltwins////PointingToDeclaration/user-management-integration-microservice/infrastructure.digitaltwins/index.html
+$dokka.location:infrastructure.digitaltwins/AzureDTClient///PointingToDeclaration/user-management-integration-microservice/infrastructure.digitaltwins/-azure-d-t-client/index.html
+$dokka.location:infrastructure.digitaltwins/AzureDTClient/AzureDTClient/#/PointingToDeclaration/user-management-integration-microservice/infrastructure.digitaltwins/-azure-d-t-client/-azure-d-t-client.html
+$dokka.location:infrastructure.digitaltwins/AzureDTClient/createHealthProfessional/#entity.healthprofessional.HealthProfessionalData.HealthProfessional/PointingToDeclaration/user-management-integration-microservice/infrastructure.digitaltwins/-azure-d-t-client/create-health-professional.html
+$dokka.location:infrastructure.digitaltwins/AzureDTClient/deleteHealthProfessional/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/infrastructure.digitaltwins/-azure-d-t-client/delete-health-professional.html
+$dokka.location:infrastructure.provider////PointingToDeclaration/user-management-integration-microservice/infrastructure.provider/index.html
+$dokka.location:infrastructure.provider/Provider///PointingToDeclaration/user-management-integration-microservice/infrastructure.provider/-provider/index.html
+$dokka.location:infrastructure.provider/Provider/healthProfessionalDatabaseManager/#/PointingToDeclaration/user-management-integration-microservice/infrastructure.provider/-provider/health-professional-database-manager.html
+$dokka.location:infrastructure.provider/Provider/healthProfessionalDigitalTwinsManager/#/PointingToDeclaration/user-management-integration-microservice/infrastructure.provider/-provider/health-professional-digital-twins-manager.html
+$dokka.location:infrastructure.provider/Provider/userDatabaseManager/#/PointingToDeclaration/user-management-integration-microservice/infrastructure.provider/-provider/user-database-manager.html
+$dokka.location:infrastructure.provider/ProviderImpl///PointingToDeclaration/user-management-integration-microservice/infrastructure.provider/-provider-impl/index.html
+$dokka.location:infrastructure.provider/ProviderImpl/ProviderImpl/#/PointingToDeclaration/user-management-integration-microservice/infrastructure.provider/-provider-impl/-provider-impl.html
+$dokka.location:infrastructure.provider/ProviderImpl/healthProfessionalDatabaseManager/#/PointingToDeclaration/user-management-integration-microservice/infrastructure.provider/-provider-impl/health-professional-database-manager.html
+$dokka.location:infrastructure.provider/ProviderImpl/healthProfessionalDigitalTwinsManager/#/PointingToDeclaration/user-management-integration-microservice/infrastructure.provider/-provider-impl/health-professional-digital-twins-manager.html
+$dokka.location:infrastructure.provider/ProviderImpl/userDatabaseManager/#/PointingToDeclaration/user-management-integration-microservice/infrastructure.provider/-provider-impl/user-database-manager.html
+$dokka.location:usecase.repository////PointingToDeclaration/user-management-integration-microservice/usecase.repository/index.html
+$dokka.location:usecase.repository/HealthProfessionalRepository///PointingToDeclaration/user-management-integration-microservice/usecase.repository/-health-professional-repository/index.html
+$dokka.location:usecase.repository/HealthProfessionalRepository/createHealthProfessional/#entity.healthprofessional.HealthProfessionalData.HealthProfessional/PointingToDeclaration/user-management-integration-microservice/usecase.repository/-health-professional-repository/create-health-professional.html
+$dokka.location:usecase.repository/HealthProfessionalRepository/deleteHealthProfessional/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/usecase.repository/-health-professional-repository/delete-health-professional.html
+$dokka.location:usecase.repository/HealthProfessionalRepository/getHealthProfessional/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/usecase.repository/-health-professional-repository/get-health-professional.html
+$dokka.location:usecase.repository/UserRepository///PointingToDeclaration/user-management-integration-microservice/usecase.repository/-user-repository/index.html
+$dokka.location:usecase.repository/UserRepository/createUser/#entity.user.User/PointingToDeclaration/user-management-integration-microservice/usecase.repository/-user-repository/create-user.html
+$dokka.location:usecase.repository/UserRepository/deleteUser/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/usecase.repository/-user-repository/delete-user.html
+$dokka.location:usecase.repository/UserRepository/getUser/#kotlin.String/PointingToDeclaration/user-management-integration-microservice/usecase.repository/-user-repository/get-user.html
+$dokka.location:usecase////PointingToDeclaration/user-management-integration-microservice/usecase/index.html
+$dokka.location:usecase/AuthenticationUseCase///PointingToDeclaration/user-management-integration-microservice/usecase/-authentication-use-case/index.html
+$dokka.location:usecase/AuthenticationUseCase/AuthenticationUseCase/#kotlin.String#kotlin.String#usecase.repository.UserRepository/PointingToDeclaration/user-management-integration-microservice/usecase/-authentication-use-case/-authentication-use-case.html
+$dokka.location:usecase/AuthenticationUseCase/execute/#/PointingToDeclaration/user-management-integration-microservice/usecase/-authentication-use-case/execute.html
+$dokka.location:usecase/UseCase///PointingToDeclaration/user-management-integration-microservice/usecase/-use-case/index.html
+$dokka.location:usecase/UseCase/execute/#/PointingToDeclaration/user-management-integration-microservice/usecase/-use-case/execute.html
+application.controller
+application.controller.manager
+application.service
+entity.healthprofessional
+entity.user
+infrastructure.api
+infrastructure.api.routes
+infrastructure.database
+infrastructure.digitaltwins
+infrastructure.digitaltwins.adtpresenter
+infrastructure.provider
+usecase
+usecase.repository
+
