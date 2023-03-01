@@ -15,17 +15,33 @@ import io.kotest.matchers.shouldNotBe
 
 class TestMongo : StringSpec({
 
-    "Test user operations on mongo db" {
+    val mockUser = User("1234", "MockPassword!")
+
+    "Test user creation on mongo db" {
         withMongo {
-            val mockUser = User("1234", "MockPassword!")
-
-            val mongoClient = MongoClient("mongodb://localhost:27017")
-
+            val mongoClient = MongoClient("mongodb://localhost:27017").also {
+                it.getDatabase("user_management").drop()
+            }
             mongoClient.createUser(mockUser) shouldNotBe null
+        }
+    }
 
+    "Test user deletion on mongo db" {
+        withMongo {
+            val mongoClient = MongoClient("mongodb://localhost:27017").also {
+                it.getDatabase("user_management").drop()
+            }
+            mongoClient.createUser(mockUser)
             mongoClient.deleteUser(mockUser.userId) shouldBe true
+        }
+    }
 
-            mongoClient.createUser(mockUser) shouldNotBe null
+    "Test user retrieve on mongo db" {
+        withMongo {
+            val mongoClient = MongoClient("mongodb://localhost:27017").also {
+                it.getDatabase("user_management").drop()
+            }
+            mongoClient.createUser(mockUser)
             mongoClient.getUser(mockUser.userId).also {
                 it shouldNotBe null
                 it?.userId shouldBe mockUser.userId
