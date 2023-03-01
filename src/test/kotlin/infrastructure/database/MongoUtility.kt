@@ -22,6 +22,7 @@ import de.flapdoodle.net.Net as Network
 
 private inline fun <reified T : Any> T.toTransition() = Start.to(StateID.of(T::class.java)).initializedWith(this)
 
+/** Starts a mongod process on localhost of the running machine. */
 internal fun withMongo(operation: () -> Unit) {
     if (System.getProperty("os.name").lowercase().contains("win")) {
         println("Testing with MongoDB is disabled on Windows due to flaky behavior")
