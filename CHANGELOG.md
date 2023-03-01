@@ -1,3 +1,26 @@
+## [1.0.1](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.0...1.0.1) (2023-03-01)
+
+
+### Dependency updates
+
+* **deps:** update ktor to v2.2.3 ([83881d7](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/83881d7e382be4c2496aaa4e60082cfbe7edaacb))
+* **deps:** update ktor to v2.2.4 ([27304a7](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/27304a7cc139d6739e7f3dbcc05a4412d07503d9))
+
+
+### Tests
+
+* **infrastructure:** add some mongo tests ([3d84e6b](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/3d84e6bfc7ab30c51275540b0fd15b852f3028f2))
+
+
+### Refactoring
+
+* **test:** refactor mongodb tests ([f0793f6](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/f0793f6d9791833c98593ae2240cc100d62f1080))
+
+
+### Documentation
+
+* **tests:** add documentation on mongo test ([11b7b3d](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/11b7b3db314c2dd80faca3a5510bb8a8a566f512))
+
 ## 1.0.0 (2023-02-28)
 
 
