@@ -32,11 +32,11 @@ data class User(
         }
     }
 
-    override fun equals(other: Any?): Boolean =
-        when (other) {
-            is User -> userId == other.userId
-            else -> false
-        }
+    override fun equals(other: Any?): Boolean = when {
+        other === this -> true
+        other is User -> userId == other.userId
+        else -> false
+    }
 
     override fun hashCode(): Int {
         return userId.hashCode()

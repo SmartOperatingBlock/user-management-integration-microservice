@@ -41,11 +41,11 @@ object HealthProfessionalData {
             }
         }
 
-        override fun equals(other: Any?): Boolean =
-            when (other) {
-                is HealthProfessional -> healthProfessionalId == other.healthProfessionalId
-                else -> false
-            }
+        override fun equals(other: Any?): Boolean = when {
+            other === this -> true
+            other is HealthProfessional -> healthProfessionalId == other.healthProfessionalId
+            else -> false
+        }
 
         override fun hashCode(): Int {
             return healthProfessionalId.hashCode()
