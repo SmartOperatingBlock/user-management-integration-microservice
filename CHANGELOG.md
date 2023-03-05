@@ -1,3 +1,22 @@
+## [1.0.2](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.1...1.0.2) (2023-03-05)
+
+
+### General maintenance
+
+* modify equals method in entities ([afccd14](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/afccd140d77032919ee84d54037a001e6888f804))
+* update readme with sonarcloud badges and usage section ([543d4f0](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/543d4f00952ad28871ba7a53c7f76dbc728536b3))
+
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v8.0.2 ([1f84004](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/1f84004cb772de60061b170b9749afd834ffeeb8))
+* **deps:** update plugin kotlin-qa to v0.35.0 ([1b8ef68](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/1b8ef685833f436eb7994ab2f860682233e36f3e))
+
+
+### Documentation
+
+* **deps:** update plugin dokka to v1.8.10 ([dc0f963](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/dc0f963401e5f82913b5ae12a9681ae31ea9158b))
+
 ## [1.0.1](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.0...1.0.1) (2023-03-01)
 
 
