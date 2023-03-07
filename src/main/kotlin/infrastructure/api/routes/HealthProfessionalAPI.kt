@@ -24,9 +24,9 @@ import io.ktor.server.routing.post
 /**
  * The HealthProfessional API implementation.
  */
-fun Route.healthProfessionalAPI(provider: Provider) {
+fun Route.healthProfessionalAPI(provider: Provider, apiPath: String) {
 
-    get("/api/healthProfessionals/{healthProfessionalId}") {
+    get("$apiPath/healthProfessionals/{healthProfessionalId}") {
         val healthProfessionalId = call.parameters["healthProfessionalId"].toString()
         HealthProfessionalServices.GetHealthProfessional(
             healthProfessionalId,
@@ -43,7 +43,7 @@ fun Route.healthProfessionalAPI(provider: Provider) {
         }
     }
 
-    delete("/api/healthProfessionals/{healthProfessionalId}") {
+    delete("$apiPath/healthProfessionals/{healthProfessionalId}") {
         val healthProfessionalId = call.parameters["healthProfessionalId"].toString()
         HealthProfessionalServices.DeleteHealthProfessional(
             healthProfessionalId,
@@ -60,7 +60,7 @@ fun Route.healthProfessionalAPI(provider: Provider) {
         }
     }
 
-    post("/api/healthProfessionals") {
+    post("$apiPath/healthProfessionals") {
         val healthProfessional = call.receive<HealthProfessionalData.HealthProfessional>()
         HealthProfessionalServices.CreateHealthProfessional(
             healthProfessional,

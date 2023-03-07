@@ -25,6 +25,9 @@ import io.ktor.server.routing.routing
  */
 class APIRouter(private val provider: Provider) {
 
+    private val version = "v1"
+    private val apiPath: String = "/api/$version"
+
     companion object {
         /** The port of the KTor server. */
         const val NETTY_PORT = 3000
@@ -50,9 +53,9 @@ class APIRouter(private val provider: Provider) {
      */
     private fun Application.configureRouting() {
         routing {
-            authAPI(provider)
-            userAPI(provider)
-            healthProfessionalAPI(provider)
+            authAPI(provider, apiPath)
+            userAPI(provider, apiPath)
+            healthProfessionalAPI(provider, apiPath)
         }
     }
 

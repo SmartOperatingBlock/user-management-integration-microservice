@@ -20,9 +20,9 @@ import usecase.AuthenticationUseCase
 /**
  * The Authentication API implementation.
  */
-fun Route.authAPI(provider: Provider) {
+fun Route.authAPI(provider: Provider, apiPath: String) {
 
-    post("/api/auth") {
+    post("$apiPath/auth") {
         if (AuthenticationUseCase(
                 call.parameters["id"].toString(),
                 call.parameters["password"].toString(),
