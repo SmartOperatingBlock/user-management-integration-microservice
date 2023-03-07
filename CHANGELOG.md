@@ -1,3 +1,34 @@
+## [1.0.3](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.2...1.0.3) (2023-03-07)
+
+
+### Bug Fixes
+
+* fix error in azure dt creation ([a97c6fa](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/a97c6fac90512cbfc2064a0eea68a96f0304cec3))
+
+
+### Dependency updates
+
+* **deps:** update plugin com.gradle.enterprise to v3.12.4 ([cfd639c](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/cfd639c893d24e9b66087f60763bb34ba5ea1e5e))
+* **deps:** update plugin kotlin-qa to v0.36.0 ([e53c006](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/e53c00640a878ac6ba7a0c09ed60f9f9718b3ff7))
+* **deps:** update plugin kotlin-qa to v0.36.1 ([ded72ae](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/ded72aef752bd304c9e00f0b65d576e8bd0da8e4))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.5 ([e827e6f](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/e827e6fe3e3712abac7453223e749805cb12e559))
+
+
+### Build and continuous integration
+
+* run codecov only in linux runners ([cb8c397](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/cb8c3970c9232ed148fa6d92b4a8fd65853d2527))
+
+
+### Documentation
+
+* remove api from api path in documentation ([067f157](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/067f157e637085edea0ebe234b56a9fe25e28588))
+
+
+### Refactoring
+
+* add version to api path ([156f144](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/156f1443009a14ac6c14815b6d1b4638d85db02c))
+* return value depends on both db and dt operations ([6595fc9](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/6595fc96c171d7989f7bac04583e27f0110e20a4))
+
 ## [1.0.2](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.1...1.0.2) (2023-03-05)
 
 
