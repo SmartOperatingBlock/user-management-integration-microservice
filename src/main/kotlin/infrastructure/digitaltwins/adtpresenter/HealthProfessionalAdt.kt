@@ -28,7 +28,7 @@ object HealthProfessionalAdt {
     fun HealthProfessional.toDigitalTwin(): BasicDigitalTwin =
         BasicDigitalTwin(this.healthProfessionalId)
             .setMetadata(BasicDigitalTwinMetadata().setModelId(HEALTH_PROFESSIONAL_MODEL))
-            .addToContents(NAME_PROPERTY, HealthProfessional::name)
-            .addToContents(SURNAME_PROPERTY, HealthProfessional::surname)
-            .addToContents(ROLE_PROPERTY, HealthProfessional::role.name)
+            .addToContents(NAME_PROPERTY, this.name)
+            .addToContents(SURNAME_PROPERTY, this.surname)
+            .addToContents(ROLE_PROPERTY, this.role.ordinal)
 }

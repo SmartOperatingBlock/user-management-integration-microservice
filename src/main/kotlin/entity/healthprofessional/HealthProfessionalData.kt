@@ -59,6 +59,6 @@ object HealthProfessionalData {
 
     /** All types of health professional role. */
     enum class HealthProfessionalRole {
-        SURGEON, ANESTHETIST, NURSE,
+        SURGEON, NURSE, ANESTHETIST
     }
 }
