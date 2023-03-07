@@ -85,9 +85,9 @@ $dokka.location:entity.user/UserData///PointingToDeclaration/user-management-in
 $dokka.location:entity.user/UserData/PASSWORD_MAX_LENGTH/#/PointingToDeclaration/user-management-integration-microservice/entity.user/-user-data/-p-a-s-s-w-o-r-d_-m-a-x_-l-e-n-g-t-h.html
 $dokka.location:entity.user/UserData/PASSWORD_MIN_LENGTH/#/PointingToDeclaration/user-management-integration-microservice/entity.user/-user-data/-p-a-s-s-w-o-r-d_-m-i-n_-l-e-n-g-t-h.html
 $dokka.location:infrastructure.api.routes////PointingToDeclaration/user-management-integration-microservice/infrastructure.api.routes/index.html
-$dokka.location:infrastructure.api.routes//authAPI/io.ktor.server.routing.Route#infrastructure.provider.Provider/PointingToDeclaration/user-management-integration-microservice/infrastructure.api.routes/auth-a-p-i.html
-$dokka.location:infrastructure.api.routes//healthProfessionalAPI/io.ktor.server.routing.Route#infrastructure.provider.Provider/PointingToDeclaration/user-management-integration-microservice/infrastructure.api.routes/health-professional-a-p-i.html
-$dokka.location:infrastructure.api.routes//userAPI/io.ktor.server.routing.Route#infrastructure.provider.Provider/PointingToDeclaration/user-management-integration-microservice/infrastructure.api.routes/user-a-p-i.html
+$dokka.location:infrastructure.api.routes//authAPI/io.ktor.server.routing.Route#infrastructure.provider.Provider#kotlin.String/PointingToDeclaration/user-management-integration-microservice/infrastructure.api.routes/auth-a-p-i.html
+$dokka.location:infrastructure.api.routes//healthProfessionalAPI/io.ktor.server.routing.Route#infrastructure.provider.Provider#kotlin.String/PointingToDeclaration/user-management-integration-microservice/infrastructure.api.routes/health-professional-a-p-i.html
+$dokka.location:infrastructure.api.routes//userAPI/io.ktor.server.routing.Route#infrastructure.provider.Provider#kotlin.String/PointingToDeclaration/user-management-integration-microservice/infrastructure.api.routes/user-a-p-i.html
 $dokka.location:infrastructure.api////PointingToDeclaration/user-management-integration-microservice/infrastructure.api/index.html
 $dokka.location:infrastructure.api/APIRouter.Companion///PointingToDeclaration/user-management-integration-microservice/infrastructure.api/-a-p-i-router/-companion/index.html
 $dokka.location:infrastructure.api/APIRouter.Companion/NETTY_PORT/#/PointingToDeclaration/user-management-integration-microservice/infrastructure.api/-a-p-i-router/-companion/-n-e-t-t-y_-p-o-r-t.html
