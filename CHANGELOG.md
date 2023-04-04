@@ -1,3 +1,27 @@
+## [1.0.4](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.3...1.0.4) (2023-04-04)
+
+
+### Build and continuous integration
+
+* add correct version of java ([cd517ab](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/cd517abe5d9f52a5ad52f1a360519fc5d63c4dfb))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin:kotlin-stdlib to v1.8.20 ([cf21338](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/cf213387eebc516e12a7fa0014023c755daf6e44))
+* **deps:** update dependency ch.qos.logback:logback-classic to v1.4.6 ([1409e13](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/1409e135eac095c4fae5c067c8da463b88ec6729))
+* **deps:** update dependency com.azure:azure-digitaltwins-core to v1.3.7 ([2c82ce0](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/2c82ce03850367a53e51a7275f43d903975aecc9))
+* **deps:** update dependency com.azure:azure-identity to v1.8.1 ([3c4d3db](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/3c4d3db0e4a7560a1e36538c87622fb20657de44))
+* **deps:** update dependency de.flapdoodle.embed:de.flapdoodle.embed.mongo to v4.6.2 ([5d4473c](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/5d4473cd957feff9dc733c0c647e7ec00014da84))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.17 ([3a3bc25](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/3a3bc253c0303e76cf5155c0c49ba0dbbdd2cff7))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.19 ([cf42365](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/cf423657e2ed4f002c3ce03faf10ecf2aee9ec75))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.20 ([e6abb63](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/e6abb6350f31adb7fabd48670da60ab52a441059))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.21 ([b496f05](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/b496f05552ef037ce98ccdbf27a927d29f84036e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.22 ([3571d42](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/3571d420c9cd726e2ce4f9020a13ad9f02aea8e5))
+* **deps:** update node.js to 18.15 ([5de157c](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/5de157ce9a32340d3deec4fd61ed112d7ffc01b1))
+* **deps:** update plugin com.gradle.enterprise to v3.12.6 ([431c75f](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/431c75f1d4f0a7624229d9db9a5b0a2f0cf9eefc))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.6 ([f710e9e](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/f710e9ebea06f4b013e86e2e84d5c5a2ecb14159))
+
 ## [1.0.3](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.2...1.0.3) (2023-03-07)
 
 
