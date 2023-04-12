@@ -2,7 +2,7 @@
 kotlin = "1.8.20"
 kotest = "5.5.5"
 ktor = "2.2.4"
-kmongo = "4.8.0"
+kmongo = "4.9.0"
 
 [libraries]
 archunit = { module = "com.tngtech.archunit:archunit-junit5", version = "1.0.1" }
