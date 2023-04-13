@@ -25,12 +25,11 @@ import io.ktor.server.routing.post
  * The User API implementation.
  */
 fun Route.userAPI(provider: Provider, apiPath: String) {
-
     get("$apiPath/users/{userId}") {
         val userId = call.parameters["userId"].toString()
         UserServices.GetUser(
             userId,
-            UserController(provider.userDatabaseManager)
+            UserController(provider.userDatabaseManager),
         ).execute().apply {
             if (this != null) {
                 call.respond(HttpStatusCode.OK, this)
@@ -44,7 +43,7 @@ fun Route.userAPI(provider: Provider, apiPath: String) {
         val userId = call.parameters["userId"].toString()
         UserServices.DeleteUser(
             userId,
-            UserController(provider.userDatabaseManager)
+            UserController(provider.userDatabaseManager),
         ).execute().apply {
             if (this) {
                 call.respond(HttpStatusCode.NoContent)
@@ -58,7 +57,7 @@ fun Route.userAPI(provider: Provider, apiPath: String) {
         val user = call.receive<User>()
         UserServices.CreateUser(
             user,
-            UserController(provider.userDatabaseManager)
+            UserController(provider.userDatabaseManager),
         ).execute().apply {
             if (this != null) {
                 call.respond(HttpStatusCode.Created)

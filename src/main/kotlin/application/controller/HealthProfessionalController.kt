@@ -19,7 +19,7 @@ import usecase.repository.HealthProfessionalRepository
  */
 class HealthProfessionalController(
     private val dbManager: HealthProfessionalDatabaseManager,
-    private val dtManager: HealthProfessionalDigitalTwinsManager
+    private val dtManager: HealthProfessionalDigitalTwinsManager,
 ) : HealthProfessionalRepository {
 
     override fun createHealthProfessional(healthProfessional: HealthProfessional): HealthProfessional? =

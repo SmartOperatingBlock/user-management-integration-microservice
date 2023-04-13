@@ -25,7 +25,7 @@ class HealthProfessionalTest : StringSpec({
         "1999-20-03",
         "jackfritz@gmail.com",
         "+39 3328455753",
-        HealthProfessionalRole.ANESTHETIST
+        HealthProfessionalRole.ANESTHETIST,
     )
 
     "An Healh Professional ID should not be empty" {
@@ -38,7 +38,7 @@ class HealthProfessionalTest : StringSpec({
                 "1999-20-03",
                 "jackfritz@gmail.com",
                 "+39 3328455753",
-                HealthProfessionalRole.ANESTHETIST
+                HealthProfessionalRole.ANESTHETIST,
             )
         }
     }

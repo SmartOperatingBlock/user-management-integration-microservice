@@ -21,12 +21,11 @@ import usecase.AuthenticationUseCase
  * The Authentication API implementation.
  */
 fun Route.authAPI(provider: Provider, apiPath: String) {
-
     post("$apiPath/auth") {
         if (AuthenticationUseCase(
                 call.parameters["id"].toString(),
                 call.parameters["password"].toString(),
-                UserController(provider.userDatabaseManager)
+                UserController(provider.userDatabaseManager),
             ).execute()
         ) {
             call.respond(HttpStatusCode.OK)

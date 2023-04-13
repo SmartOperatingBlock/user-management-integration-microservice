@@ -25,15 +25,14 @@ import io.ktor.server.routing.post
  * The HealthProfessional API implementation.
  */
 fun Route.healthProfessionalAPI(provider: Provider, apiPath: String) {
-
     get("$apiPath/healthProfessionals/{healthProfessionalId}") {
         val healthProfessionalId = call.parameters["healthProfessionalId"].toString()
         HealthProfessionalServices.GetHealthProfessional(
             healthProfessionalId,
             HealthProfessionalController(
                 provider.healthProfessionalDatabaseManager,
-                provider.healthProfessionalDigitalTwinsManager
-            )
+                provider.healthProfessionalDigitalTwinsManager,
+            ),
         ).execute().apply {
             if (this != null) {
                 call.respond(HttpStatusCode.OK, this)
@@ -49,8 +48,8 @@ fun Route.healthProfessionalAPI(provider: Provider, apiPath: String) {
             healthProfessionalId,
             HealthProfessionalController(
                 provider.healthProfessionalDatabaseManager,
-                provider.healthProfessionalDigitalTwinsManager
-            )
+                provider.healthProfessionalDigitalTwinsManager,
+            ),
         ).execute().apply {
             if (this) {
                 call.respond(HttpStatusCode.NoContent)
@@ -66,8 +65,8 @@ fun Route.healthProfessionalAPI(provider: Provider, apiPath: String) {
             healthProfessional,
             HealthProfessionalController(
                 provider.healthProfessionalDatabaseManager,
-                provider.healthProfessionalDigitalTwinsManager
-            )
+                provider.healthProfessionalDigitalTwinsManager,
+            ),
         ).execute().apply {
             if (this != null) {
                 call.respond(HttpStatusCode.Created)

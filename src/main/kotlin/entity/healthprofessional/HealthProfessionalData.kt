@@ -33,7 +33,7 @@ object HealthProfessionalData {
         /** The health professional phone number. */
         val phoneNumber: String,
         /** The health professional role. */
-        val role: HealthProfessionalRole
+        val role: HealthProfessionalRole,
     ) {
         init {
             check(healthProfessionalId.isNotEmpty()) {
