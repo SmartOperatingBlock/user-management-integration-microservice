@@ -17,7 +17,7 @@ import usecase.repository.UserRepository
 class AuthenticationUseCase(
     private val userId: String,
     private val password: String,
-    private val userRepository: UserRepository
+    private val userRepository: UserRepository,
 ) : UseCase<Boolean> {
 
     override fun execute(): Boolean =

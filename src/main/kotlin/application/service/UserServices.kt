@@ -23,7 +23,9 @@ object UserServices {
         override fun execute(): User? =
             if (userRepository.getUser(user.userId) == null) {
                 userRepository.createUser(user)
-            } else null
+            } else {
+                null
+            }
     }
 
     /**
@@ -31,7 +33,7 @@ object UserServices {
      */
     class DeleteUser(
         private val userId: String,
-        private val userRepository: UserRepository
+        private val userRepository: UserRepository,
     ) : ApplicationService<Boolean> {
         override fun execute(): Boolean = userRepository.deleteUser(userId)
     }
@@ -41,7 +43,7 @@ object UserServices {
      */
     class GetUser(
         private val userId: String,
-        private val userRepository: UserRepository
+        private val userRepository: UserRepository,
     ) : ApplicationService<User?> {
         override fun execute(): User? = userRepository.getUser(userId)
     }

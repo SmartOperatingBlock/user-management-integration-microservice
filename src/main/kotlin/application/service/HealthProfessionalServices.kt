@@ -21,12 +21,14 @@ object HealthProfessionalServices {
      */
     class CreateHealthProfessional(
         private val healthProfessional: HealthProfessional,
-        private val healthProfessionalRepository: HealthProfessionalRepository
+        private val healthProfessionalRepository: HealthProfessionalRepository,
     ) : ApplicationService<HealthProfessional?> {
         override fun execute(): HealthProfessional? =
             if (healthProfessionalRepository.getHealthProfessional(healthProfessional.healthProfessionalId) == null) {
                 healthProfessionalRepository.createHealthProfessional(healthProfessional)
-            } else null
+            } else {
+                null
+            }
     }
 
     /**
@@ -35,7 +37,7 @@ object HealthProfessionalServices {
      */
     class DeleteHealthProfessional(
         private val healthProfessionalId: String,
-        private val healthProfessionalRepository: HealthProfessionalRepository
+        private val healthProfessionalRepository: HealthProfessionalRepository,
     ) : ApplicationService<Boolean> {
         override fun execute(): Boolean =
             healthProfessionalRepository.deleteHealthProfessional(healthProfessionalId)
@@ -47,7 +49,7 @@ object HealthProfessionalServices {
      */
     class GetHealthProfessional(
         private val healthProfessionalId: String,
-        private val healthProfessionalRepository: HealthProfessionalRepository
+        private val healthProfessionalRepository: HealthProfessionalRepository,
     ) : ApplicationService<HealthProfessional?> {
         override fun execute(): HealthProfessional? =
             healthProfessionalRepository.getHealthProfessional(healthProfessionalId)
