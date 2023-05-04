@@ -17,6 +17,10 @@ An integration microservice responsible to manage Operating Block users:
 ## Usage 
 1. Provide a `.env` file with the following variables:
     - USER_MANAGEMENT_MONGODB_URL
+    - AZURE_CLIENT_ID: ID of an Azure AD application
+    - AZURE_TENANT_ID: ID of the application's Azure AD tenant
+    - AZURE_CLIENT_SECRET: the application's client secrets
+    - AZURE_DT_ENDPOINT: the Azure Digital Twins instance endpoint
 2. Run the container with the command:
    
    `docker run ghcr.io/smartoperatingblock/user-management-integration-microservice:latest`
