@@ -12,7 +12,7 @@ package usecase
  * The interface of a domain use case.
  * @param E the return type of the use case.
  */
-interface UseCase<out E> {
+fun interface UseCase<out E> {
 
     /** Execute the use case. */
     fun execute(): E
