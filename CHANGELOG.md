@@ -1,3 +1,37 @@
+## [1.0.6](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.5...1.0.6) (2023-05-16)
+
+
+### Bug Fixes
+
+* correct request parameter name ([da9dcd2](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/da9dcd2403fa82fbd2e5de5043b7be3721bab00f))
+
+
+### General maintenance
+
+* make ApplicationService interface functional ([f2c241d](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/f2c241d5d7df2d705a12833e06dff81c80aedb14))
+* make UseCase interface functional ([7674e7f](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/7674e7fcacec61f88318fe252120eb4893d0fea7))
+* update README.md with azure env variables ([7835f7f](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/7835f7fe0e26f03a5758b9892d913028d282beec))
+
+
+### Build and continuous integration
+
+* **deps:** update smartoperatingblock/documentation-ghp-action action to v1.1.0 ([1a3cd91](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/1a3cd91d48096baacd1023c2f321b6e0afba2c4c))
+
+
+### Dependency updates
+
+* **deps:** update alpine docker tag to v3.18 ([e19403b](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/e19403be7f5cc587b8ab2baddd5337554ad45e0b))
+* **deps:** update dependency com.azure:azure-identity to v1.8.3 ([8161c40](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/8161c407483dd2f82dc51f08b74912f59167d9d1))
+* **deps:** update dependency com.azure:azure-identity to v1.9.0 ([c9dc1fb](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/c9dc1fb3c6133fb4979b66eec03eb50e2c079a55))
+* **deps:** update dependency de.flapdoodle.embed:de.flapdoodle.embed.mongo to v4.6.3 ([6e7e7fe](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/6e7e7feeca1535bee1d0360b387955bb07500040))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.26 ([034da82](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/034da821c2b97e42002b61196f749664335353d3))
+* **deps:** update kotest to v5.6.2 ([4d66c60](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/4d66c60df045a3590d4de0f4d89a5e327f762d43))
+* **deps:** update plugin com.gradle.enterprise to v3.13.1 ([1732535](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/1732535e9453c9f7fab680be8e6e045ae6f38911))
+* **deps:** update plugin com.gradle.enterprise to v3.13.2 ([c1958c1](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/c1958c153f3254ad784ef3021d5b9fa2ea9a38b2))
+* **deps:** update plugin kotlin-qa to v0.40.0 ([01791c7](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/01791c72ef1d1487c5e27925f26bb21e318e8798))
+* **deps:** update plugin kotlin-qa to v0.41.0 ([d614fe2](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/d614fe2399ede1e8c4325ba70d7a45c096cdaa7f))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.7 ([f683a0c](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/f683a0c2044fca6ac13f1bf7bdc0ab9aaa77670d))
+
 ## [1.0.5](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.4...1.0.5) (2023-04-26)
 
 
