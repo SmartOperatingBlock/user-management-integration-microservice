@@ -23,7 +23,7 @@ import usecase.AuthenticationUseCase
 fun Route.authAPI(provider: Provider, apiPath: String) {
     post("$apiPath/auth") {
         if (AuthenticationUseCase(
-                call.parameters["id"].toString(),
+                call.parameters["userId"].toString(),
                 call.parameters["password"].toString(),
                 UserController(provider.userDatabaseManager),
             ).execute()
