@@ -1,3 +1,16 @@
+## [1.0.7](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.6...1.0.7) (2023-05-17)
+
+
+### Bug Fixes
+
+* change receive method in auth api ([fafd3a5](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/fafd3a51c2dacfc1b186be71b2f3d6c2eff482af))
+* change receive method in auth api ([9ec0e4d](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/9ec0e4d5425dd2132319882a3114ab1d8160bb0b))
+
+
+### Build and continuous integration
+
+* **deps:** update codecov/codecov-action action to v3.1.4 ([0376518](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/0376518bf2a9611333992a9d84dacebffeaf120a))
+
 ## [1.0.6](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.5...1.0.6) (2023-05-16)
 
 
