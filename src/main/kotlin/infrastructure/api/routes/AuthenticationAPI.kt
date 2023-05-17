@@ -9,9 +9,12 @@
 package infrastructure.api.routes
 
 import application.controller.UserController
+import entity.user.User
 import infrastructure.provider.Provider
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.call
+import io.ktor.server.request.receive
+import io.ktor.server.request.receiveText
 import io.ktor.server.response.respond
 import io.ktor.server.routing.Route
 import io.ktor.server.routing.post
@@ -22,15 +25,18 @@ import usecase.AuthenticationUseCase
  */
 fun Route.authAPI(provider: Provider, apiPath: String) {
     post("$apiPath/auth") {
-        if (AuthenticationUseCase(
-                call.parameters["userId"].toString(),
-                call.parameters["password"].toString(),
-                UserController(provider.userDatabaseManager),
-            ).execute()
-        ) {
-            call.respond(HttpStatusCode.OK)
-        } else {
-            call.respond(HttpStatusCode.Unauthorized, "Error: wrong credentials!")
+        call.receive<User>().run {
+            if (AuthenticationUseCase(
+                    this.userId,
+                    this.password,
+                    UserController(provider.userDatabaseManager),
+                ).execute()
+            ) {
+                call.respond(HttpStatusCode.OK)
+            } else {
+                call.respond(HttpStatusCode.Unauthorized, "Error: wrong credentials!")
+            }
         }
+
     }
 }
