@@ -1,3 +1,20 @@
+## [1.0.8](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.7...1.0.8) (2023-06-01)
+
+
+### Dependency updates
+
+* **deps:** update dependency com.azure:azure-digitaltwins-core to v1.3.9 ([9527cc8](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/9527cc86d85f85bbd8b6c8d6fc0cea9d2275fe1f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.27 ([e6c18c2](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/e6c18c280f21b5cf18f4bc29f97a231f89baefa8))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.29 ([9b1148c](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/9b1148c84fc6e699c92a28c6efae7f3f6593e5a4))
+* **deps:** update ktor to v2.3.1 ([f321de2](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/f321de2f25a1afddda370e9411e0be461e2c1a5d))
+* **deps:** update plugin com.gradle.enterprise to v3.13.3 ([e5b2041](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/e5b204195fa1bd64022a639beca4d35de316e52e))
+* **deps:** update plugin kotlin-qa to v0.42.0 ([8d9a6d7](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/8d9a6d7dabe87848b5d08d7d74634de00345fc0b))
+
+
+### Documentation
+
+* update openapi documentation ([ca46d43](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/ca46d43cb5b95c628b74c351d6254deda233ad2a))
+
 ## [1.0.7](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.6...1.0.7) (2023-05-17)
 
 
