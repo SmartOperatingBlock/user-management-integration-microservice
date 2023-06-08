@@ -1,3 +1,19 @@
+## [1.0.9](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.8...1.0.9) (2023-06-08)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin:kotlin-stdlib to v1.8.22 ([9705685](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/9705685cf82545d49238ca702962e00aa562f803))
+* **deps:** update dependency com.azure:azure-identity to v1.9.1 ([81b59a5](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/81b59a58d06401ffea5cee128b994575c3b52664))
+* **deps:** update dependency de.flapdoodle.embed:de.flapdoodle.embed.mongo to v4.7.0 ([d60aa64](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/d60aa6479e504a19a5a6436226dbc66947d9de3f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.30 ([765173c](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/765173c3394d079a101c5c24614e056db497c15d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.32 ([1ef98ea](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/1ef98ea6f6f0a48a420bf515ef82f0e60f2e0c40))
+* **deps:** update plugin kotlin-qa to v0.42.1 ([d3d8f7b](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/d3d8f7bba4341fe737e97c7a992f994cf9f94d76))
+* **deps:** update plugin kotlin-qa to v0.43.0 ([8d64477](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/8d644770e45326a9cb3e02ec49a4559334883f15))
+* **deps:** update plugin kotlin-qa to v0.44.0 ([a5b6086](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/a5b60863e704921f25e9e68c22c539c83f1c9639))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.8 ([a74d6a1](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/a74d6a19abc37624f92e5145921aeebdd8b775dd))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.9 ([3f25f6e](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/3f25f6ee75d74825e19fda9a4f315282a2cedb0f))
+
 ## [1.0.8](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.7...1.0.8) (2023-06-01)
 
 
