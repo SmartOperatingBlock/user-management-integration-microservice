@@ -1,3 +1,16 @@
+## [1.0.10](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.9...1.0.10) (2023-06-10)
+
+
+### Build and continuous integration
+
+* **deps:** update smartoperatingblock/release-and-delivery-action action to v1.0.1 ([4f73ea1](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/4f73ea1fbe801f30c8e24de12204143186f39c25))
+* **deps:** update smartoperatingblock/release-and-delivery-action action to v1.0.2 ([cfdcd1b](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/cfdcd1bd65b80f5a22a0d13454d1040712ebd4f7))
+
+
+### Documentation
+
+* **deps:** update plugin dokka to v1.8.20 ([caef0f7](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/caef0f7c46c94d0a125d718867cf8a663d1d23c9))
+
 ## [1.0.9](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.8...1.0.9) (2023-06-08)
 
 
