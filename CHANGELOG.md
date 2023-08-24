@@ -1,3 +1,45 @@
+## [1.0.12](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.11...1.0.12) (2023-08-24)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin:kotlin-stdlib to v1.9.10 ([a710539](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/a710539b39a10218dfb372c2fc5b5da597376a0f))
+* **deps:** update dependency ch.qos.logback:logback-classic to v1.4.10 ([8509eab](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/8509eab2f91ded92373321717b9a2fc388f205e8))
+* **deps:** update dependency ch.qos.logback:logback-classic to v1.4.11 ([8a8b561](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/8a8b561c65fa6aa94f8831fad3d606d8c11762a8))
+* **deps:** update dependency ch.qos.logback:logback-classic to v1.4.9 ([99b214a](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/99b214aaafa211651cb39f57e9c965e1e2e1c341))
+* **deps:** update dependency com.azure:azure-digitaltwins-core to v1.3.11 ([f112ac4](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/f112ac428557185cccc06c109f12079b25d620bc))
+* **deps:** update dependency com.azure:azure-digitaltwins-core to v1.3.12 ([330c25a](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/330c25a1b9da397caeb56d8bfc232cd41ec9c6c8))
+* **deps:** update dependency com.azure:azure-identity to v1.10.0 ([f74da70](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/f74da7034857a66781113ca225876c3d461deb37))
+* **deps:** update dependency com.azure:azure-identity to v1.9.2 ([ae18284](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/ae18284c2eda7ef186939f28907c551df08ffa1e))
+* **deps:** update dependency com.tngtech.archunit:archunit-junit5 to v1.1.0 ([2cba3c2](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/2cba3c20967eb42aeef5deabe47fbb76553ed004))
+* **deps:** update dependency de.flapdoodle.embed:de.flapdoodle.embed.mongo to v4.7.1 ([26bc4c2](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/26bc4c29d9d44e8ed6f5fd3f088e25a0896a3e08))
+* **deps:** update dependency de.flapdoodle.embed:de.flapdoodle.embed.mongo to v4.7.2 ([0d7fe9d](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/0d7fe9d410840d427cbba335d6780503bb906a9a))
+* **deps:** update dependency de.flapdoodle.embed:de.flapdoodle.embed.mongo to v4.8.0 ([93020ee](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/93020ee13be30f3e8c9988afe90b2695a5bef4c7))
+* **deps:** update dependency de.flapdoodle.embed:de.flapdoodle.embed.mongo to v4.8.1 ([53af852](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/53af85230c773c7016561644dd6e3f9e182eb6b5))
+* **deps:** update dependency de.flapdoodle.embed:de.flapdoodle.embed.mongo to v4.9.0 ([13d7cc3](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/13d7cc3ea500c566c76fd3000047098e0480763f))
+* **deps:** update dependency gradle to v8.2.1 ([9516ae8](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/9516ae8d53311b04a3795b83ff8ce2ee97ce55f5))
+* **deps:** update dependency gradle to v8.3 ([53c86e0](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/53c86e07ab36afe4ed749cd945e878c5ecb206da))
+* **deps:** update dependency org.litote.kmongo:kmongo to v4.10.0 ([2300053](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/230005344855ea27436390a56fb1f5b652e39fef))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.40 ([b91b978](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/b91b97860fe2da1b00bd9be20abfaf6e991f64fc))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.41 ([7cd3594](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/7cd35947ee97f2ce236f57f459fa7df909cb8aae))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.42 ([4046baa](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/4046baa792e26784c19679033e1bf18b44984295))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.43 ([82273e8](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/82273e874cc4eb317b9f97d6ebb00173d63715a4))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.44 ([9416a0b](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/9416a0ba1da099109307130e6397042f15d6d91c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.46 ([43d0234](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/43d02348c4b2110b0407d73a13b2aae6903c8a79))
+* **deps:** update ktor to v2.3.3 ([6e16c25](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/6e16c25711ceb6103b4f123078c380c39b981a8b))
+* **deps:** update node.js to 18.17 ([00efd8c](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/00efd8c4cc26df0e971df4613f8b37ec94d5d3ad))
+* **deps:** update plugin com.gradle.enterprise to v3.14 ([05878b8](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/05878b8ddf18126efd37c2f8354de9ea1b1ad895))
+* **deps:** update plugin com.gradle.enterprise to v3.14.1 ([34f3a19](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/34f3a19768896b8af90b350bd2b9c560d3c60963))
+* **deps:** update plugin kotlin-qa to v0.47.0 ([5fdbe4c](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/5fdbe4ca4b23be61d8a30fb8af35a646cf0eefb5))
+* **deps:** update plugin kotlin-qa to v0.47.1 ([2016826](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/20168266d28d5b6901b6fb193b9211852ad47ebc))
+* **deps:** update plugin kotlin-qa to v0.48.0 ([3f27dcd](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/3f27dcd41672daab820dc34a5a53b596c38b47e8))
+* **deps:** update plugin kotlin-qa to v0.49.0 ([b84d116](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/b84d116fca7dd03db6557cae22ecc90ab3d97821))
+
+
+### Build and continuous integration
+
+* **deps:** update gradle/wrapper-validation-action action to v1.1.0 ([dbc70ff](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/dbc70ff2c7c8100a87398d2f8e6add416d506bde))
+
 ## [1.0.11](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.10...1.0.11) (2023-07-07)
 
 
