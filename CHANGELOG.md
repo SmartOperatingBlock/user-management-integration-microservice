@@ -1,3 +1,27 @@
+## [1.0.13](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.12...1.0.13) (2023-09-05)
+
+
+### Dependency updates
+
+* **deps:** update dependency de.flapdoodle.embed:de.flapdoodle.embed.mongo to v4.9.1 ([87178ad](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/87178adc13b6b3e76cd35f98e9500d5639b32417))
+* **deps:** update dependency de.flapdoodle.embed:de.flapdoodle.embed.mongo to v4.9.2 ([1cf6886](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/1cf688656730c30723578a2685bc68d855e93c7f))
+* **deps:** update dependency io.kotest:kotest-assertions-core to v5.7.0 ([01d70ec](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/01d70ececbbf4b9145e4e65ea4c717b00f06d481))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.47 ([316cd9f](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/316cd9f2dcbe60bab0fd9a3fec478e9199aed4ab))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.48 ([e56b52b](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/e56b52ba599af354ecbeb6a4d041fe9365baa6ba))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.49 ([31fc848](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/31fc84863caaaf342af429c1bb001f037c3be2e6))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.51 ([7613377](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/7613377cd958e2432765e90ebf044ff137ff2a1d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.52 ([c7d2b6e](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/c7d2b6e80d91acb4cccbe64ce0e9d3c707cdf9cb))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.53 ([f163e3e](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/f163e3e26493f02581d41e40029d23b91a6d8265))
+* **deps:** update kotest to v5.7.1 ([6ffcd72](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/6ffcd724e6a09b1cec569642cc3cbcf6c5383a89))
+* **deps:** update ktor to v2.3.4 ([85ae7e9](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/85ae7e93dc95ebc073820275446556199fdab197))
+* **deps:** update plugin kotlin-qa to v0.49.1 ([bd32825](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/bd32825414d3c023025423cc6994bca4f7db7c22))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.10 ([4142b5f](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/4142b5ff67a508c8317ea2a849fe13bbadd4c5d9))
+
+
+### Documentation
+
+* **deps:** update plugin dokka to v1.9.0 ([8b46193](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/8b4619343357a6ba63799ea5634d3eca2df7949f))
+
 ## [1.0.12](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.11...1.0.12) (2023-08-24)
 
 
