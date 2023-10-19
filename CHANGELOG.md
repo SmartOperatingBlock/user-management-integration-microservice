@@ -1,3 +1,48 @@
+## [1.0.14](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.13...1.0.14) (2023-10-19)
+
+
+### Dependency updates
+
+* **deps:** update dependency com.azure:azure-digitaltwins-core to v1.3.13 ([b4b6821](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/b4b68214097bfcfa0a4fbdcc8a5eedef0842b4ce))
+* **deps:** update dependency com.azure:azure-identity to v1.10.1 ([251a8f1](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/251a8f1bb15a0c8a85e9db0271d21997f9919623))
+* **deps:** update dependency com.azure:azure-identity to v1.10.2 ([e540a1e](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/e540a1e0c9b161c64a044cd5b41bc3c9e7ce7573))
+* **deps:** update dependency com.azure:azure-identity to v1.10.3 ([2ceae35](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/2ceae353765b89c887fceabb9a1112639f03f6ae))
+* **deps:** update dependency gradle to v8.4 ([bd46905](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/bd46905b65c19c1032e4caccb23a3302643ea4aa))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.54 ([6aa67ca](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/6aa67ca07bf7a415f1dfa33c5f12bdf222935c40))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.55 ([21fb470](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/21fb470991ca8e17f9a4865e3f71ce8159b73211))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.56 ([57b4adb](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/57b4adbea2b7d6d26960c9b693fdbde8ffd0a11b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.58 ([ab3f4a3](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/ab3f4a30857751bf8c62a70bea40ead1feaff035))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.60 ([8a21a7a](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/8a21a7a4879695b84e6007846e1cd293042b150d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.61 ([1e1158d](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/1e1158dfc1b75795c385de135ebbcbe04cebf075))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.62 ([9279135](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/9279135a08056e2dda04e96700756183d114cd99))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.63 ([c808406](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/c80840675b5c5a15d6112b63cdfd4c7f91f2af78))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.64 ([d6c3b8f](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/d6c3b8f2834d43b36651096e714904ed4ebdde9c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.65 ([ff57644](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/ff57644e445943ea082a628d75dfac6abb5e066b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.66 ([dfb4de9](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/dfb4de956d1f137c64bc390b321d9413e1282fc3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.67 ([5597228](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/5597228133c331f591d5982e298178dbb5e527f2))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.68 ([7a25739](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/7a2573985296fca658005c89a18bbbae5403a366))
+* **deps:** update kotest to v5.7.2 ([7921985](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/7921985abd890bf8cca66436e47cf6da99dcb9bf))
+* **deps:** update ktor to v2.3.5 ([7468cb7](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/7468cb7eab876755be84de36abeb4b0d7060a82c))
+* **deps:** update node.js to 18.18 ([49b702d](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/49b702ddd820f662c27cbd00432a3b9a0c38d7c4))
+* **deps:** update plugin com.gradle.enterprise to v3.15 ([8943b26](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/8943b26f06a96295e61cc86b20ff50466abeccf2))
+* **deps:** update plugin com.gradle.enterprise to v3.15.1 ([6ae655a](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/6ae655aad40c339768a6dd1b7c2ba25c9a9a75b5))
+* **deps:** update plugin kotlin-qa to v0.50.0 ([593c6c9](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/593c6c9e5359416adcc36a3e97472067793a6f85))
+* **deps:** update plugin kotlin-qa to v0.51.0 ([5023db9](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/5023db964b23396f52c54998142697d9172011d3))
+
+
+### Documentation
+
+* **deps:** update plugin dokka to v1.9.10 ([2629e40](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/2629e406c343e06ff59d059f147788d803eaa416))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4 ([5e6f052](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/5e6f052eda89113310ad600ec373e444f3059ca3))
+* **deps:** update smartoperatingblock/release-and-delivery-action action to v1.0.10 ([3fc7dfa](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/3fc7dfa452df91ba638f0ba9767ee26969a35ada))
+* **deps:** update smartoperatingblock/release-and-delivery-action action to v1.0.4 ([8afb843](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/8afb84348851f12a4ef211460331a9b421a45439))
+* **deps:** update smartoperatingblock/release-and-delivery-action action to v1.0.5 ([49be686](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/49be6860df30487665a937303966c7f9ce5a900d))
+* **deps:** update smartoperatingblock/release-and-delivery-action action to v1.0.6 ([7c83d11](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/7c83d11d18aeac5365dbf1fea8b0ef5bba608d0e))
+
 ## [1.0.13](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.12...1.0.13) (2023-09-05)
 
 
