@@ -1,3 +1,41 @@
+## [1.0.17](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.16...1.0.17) (2023-12-22)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin:kotlin-stdlib to v1.9.22 ([b72b430](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/b72b43082cc9b3f01362a287e591e93b5adc697b))
+* **deps:** update alpine docker tag to v3.19 ([21e10a0](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/21e10a03a582ad5fda50ff1ab929b1777b253b0d))
+* **deps:** update dependency ch.qos.logback:logback-classic to v1.4.12 ([5f11e89](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/5f11e893f2b95463963bee0bb7f4f31705dc21fa))
+* **deps:** update dependency ch.qos.logback:logback-classic to v1.4.13 ([0cd80a9](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/0cd80a9beba7fd7afa136e19d66244b449b05f16))
+* **deps:** update dependency ch.qos.logback:logback-classic to v1.4.14 ([17dc695](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/17dc6955d307ac619b8845d146a7139258558516))
+* **deps:** update dependency com.azure:azure-digitaltwins-core to v1.3.16 ([734f2fd](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/734f2fd3db498f27ca19e0e49b126ad3394ab906))
+* **deps:** update dependency com.azure:azure-identity to v1.11.1 ([698790c](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/698790c9ab6ea7cbd6b485eab048bb90796b910f))
+* **deps:** update dependency com.tngtech.archunit:archunit-junit5 to v1.2.1 ([d2ba22f](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/d2ba22f458f26426a0625e8bd995b4ef3f2dd55e))
+* **deps:** update dependency de.flapdoodle.embed:de.flapdoodle.embed.mongo to v4.12.0 ([43da78e](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/43da78e62f7f7072ce56351effa7db7e4d287720))
+* **deps:** update dependency gradle to v8.5 ([62e5e9c](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/62e5e9cdc4a63358d39566c4ef3abe97cfc936f5))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.79 ([85ed695](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/85ed695069584c04c04e189c202628a335c594e7))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.80 ([f223436](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/f223436290dbb9310e15d7dae485c915ba3573cf))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.81 ([98bb629](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/98bb629559a712f31380ae556780f2fe76acf05b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.82 ([eb98ce4](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/eb98ce4a7ad880da4b5d901ea6a1651ccdda427f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.83 ([8e4364b](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/8e4364b5086885b6fffbc8c424e4ad8e7e494b32))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.84 ([39872ca](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/39872ca76724f84980ea1047ad5cdc19254c628f))
+* **deps:** update ktor to v2.3.7 ([e38ff85](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/e38ff851d5f8b87695a787c4860efa25ede9bd2c))
+* **deps:** update plugin com.gradle.enterprise to v3.16 ([62b3be0](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/62b3be0cbac2d14d571bc99e112f35c80d54fec8))
+* **deps:** update plugin com.gradle.enterprise to v3.16.1 ([04ef775](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/04ef775b95ccc4a410e4d22a708e2026910aef9d))
+* **deps:** update plugin kotlin-qa to v0.54.1 ([f2bf73e](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/f2bf73ef6fa0df8cab95c64c93a681859f8bcd79))
+* **deps:** update plugin kotlin-qa to v0.55.0 ([0f39dd2](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/0f39dd2454a2a335bf7929b160f6df892927d026))
+* **deps:** update plugin kotlin-qa to v0.55.1 ([d09abba](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/d09abba02786a190cffcaf2c22b8132161e9f2b7))
+* **deps:** update plugin kotlin-qa to v0.55.2 ([9694741](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/9694741bbe2e5a4163dfdcef39d27a0a865aeee3))
+* **deps:** update plugin kotlin-qa to v0.56.0 ([d2c7ed2](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/d2c7ed209e8cd7649597068312702207be685d67))
+* **deps:** update plugin kotlin-qa to v0.57.0 ([355e87e](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/355e87ef02d80908b7bec31899998e1fc7e083b0))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.15 ([9853b6d](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/9853b6da3fd1e07f91a11467f1205c9ed95853a9))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.16 ([702a7cf](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/702a7cf3adbabc18e110fd00d87687b878a66b65))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v4 ([486ed0e](https://github.com/SmartOperatingBlock/user-management-integration-microservice/commit/486ed0ec6673f76176ccffbff3ecc69e058de892))
+
 ## [1.0.16](https://github.com/SmartOperatingBlock/user-management-integration-microservice/compare/1.0.15...1.0.16) (2023-11-24)
 
 
